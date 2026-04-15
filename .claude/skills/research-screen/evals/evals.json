@@ -1,0 +1,76 @@
+{
+  "skill_name": "research-screen",
+  "evals": [
+    {
+      "id": 1,
+      "name": "biomedical-eeg-adhd",
+      "prompt": "我剛完成 research-search，請幫我篩選論文。Session folder 在 Research/20260410_eeg-adhd-children/",
+      "expected_output": "Screening results with 3-axis scores for ~51 papers on EEG neurofeedback for ADHD in children. Should produce step3_screening_results.md (bilingual, with tiers and borderline section) and step3_shortlist.json. Hub papers like Cortese 2016 and Arns 2013 should be flagged. Borderline section should prompt for Checkpoint 2 review.",
+      "files": [
+        "Research/20260410_eeg-adhd-children/step0_session_config.json",
+        "Research/20260410_eeg-adhd-children/step2_raw_papers.json"
+      ],
+      "assertions": [
+        "step3_screening_results.md exists and is non-empty (>500 characters)",
+        "step3_shortlist.json exists and is valid JSON",
+        "Every paper from step2_raw_papers.json appears in the screening results (included, borderline, or excluded) — total must equal the input count",
+        "Each paper has 3 axis scores (relevance, quality, recency_impact) all between 1.0 and 5.0",
+        "Composite scores are weighted averages: relevance*0.5 + quality*0.3 + recency_impact*0.2 (within ±0.05 tolerance)",
+        "Screening results contain bilingual content (both English and Traditional Chinese characters present in headers and section titles)",
+        "A clearly labeled borderline section exists containing papers with composite scores between 3.0 and 3.4",
+        "Checkpoint 2 instructions are present — text mentioning '邊緣打撈' or borderline review prompt",
+        "All papers in step3_shortlist.json have composite score >= 3.5",
+        "No paper in the excluded section has composite score >= 3.5",
+        "Screening results are organized into at least 2 tiers for included papers",
+        "Hub papers from the citation network (is_hub=true in step2 data) are flagged or noted in the screening results",
+        "Each excluded paper has a specific exclusion reason (not just 'not relevant' — should mention population, methodology, or similar specifics)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "cross-disciplinary-bci-depression",
+      "prompt": "research-screen — 我的 session 在 Research/20260410_bci-depression-treatment/，請開始篩選",
+      "expected_output": "Screening results for BCI depression papers. Cross-disciplinary topic should test the skill's ability to handle papers from neuroscience, engineering, and clinical psychology. Screening criteria should adapt PICO for a cross-disciplinary topic. Should produce both output files with bilingual content.",
+      "files": [
+        "Research/20260410_bci-depression-treatment/step0_session_config.json",
+        "Research/20260410_bci-depression-treatment/step2_raw_papers.json"
+      ],
+      "assertions": [
+        "step3_screening_results.md exists and is non-empty (>500 characters)",
+        "step3_shortlist.json exists and is valid JSON",
+        "Every paper from step2_raw_papers.json appears in the screening results — total must equal the input count",
+        "Each paper has 3 axis scores (relevance, quality, recency_impact) all between 1.0 and 5.0",
+        "Composite scores are weighted averages: relevance*0.5 + quality*0.3 + recency_impact*0.2 (within ±0.05 tolerance)",
+        "Screening results contain bilingual content (both English and Traditional Chinese)",
+        "A borderline section exists with papers scored 3.0–3.4",
+        "Checkpoint 2 instructions are present",
+        "All papers in step3_shortlist.json have composite score >= 3.5",
+        "Screening criteria reference the PICO from session config (mentions population, intervention, or outcome from the config)",
+        "Inclusion criteria are adapted for the cross-disciplinary nature of BCI+depression (not purely clinical or purely engineering criteria)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "cs-llm-program-repair",
+      "prompt": "proceed to screening for my LLM program repair session. The session folder is Research/20260410_llm-automated-program-repair/",
+      "expected_output": "Screening results for a non-biomedical (CS) topic. Should adapt PICO scoring for CS context (no clinical population, methodology = benchmark rigor instead of RCT). Preprints should not be penalized. Should handle arXiv-heavy collection appropriately.",
+      "files": [
+        "Research/20260410_llm-automated-program-repair/step0_session_config.json",
+        "Research/20260410_llm-automated-program-repair/step2_raw_papers.json"
+      ],
+      "assertions": [
+        "step3_screening_results.md exists and is non-empty (>500 characters)",
+        "step3_shortlist.json exists and is valid JSON",
+        "Every paper from step2_raw_papers.json appears in the screening results — total must equal the input count",
+        "Each paper has 3 axis scores (relevance, quality, recency_impact) all between 1.0 and 5.0",
+        "Composite scores are weighted averages: relevance*0.5 + quality*0.3 + recency_impact*0.2 (within ±0.05 tolerance)",
+        "Screening results contain bilingual content (both English and Traditional Chinese)",
+        "A borderline section exists with papers scored 3.0–3.4",
+        "All papers in step3_shortlist.json have composite score >= 3.5",
+        "Methodology scoring adapts to CS context — does not reference RCTs or clinical trial designs as quality benchmarks",
+        "arXiv preprints are not automatically given low recency_impact scores (at least one arXiv preprint from the last 2 years has recency_impact >= 4)",
+        "Screening criteria use CS-appropriate language (e.g., benchmarks, datasets, baselines rather than clinical populations or interventions)"
+      ]
+    }
+  ]
+}

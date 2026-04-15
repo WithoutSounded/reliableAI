@@ -1,0 +1,22 @@
+[
+  {"query": "幫我篩選論文", "should_trigger": true},
+  {"query": "research-screen", "should_trigger": true},
+  {"query": "/research-screen", "should_trigger": true},
+  {"query": "proceed to screening for my research session", "should_trigger": true},
+  {"query": "I just finished research-search, now screen the papers", "should_trigger": true},
+  {"query": "score the papers for relevance and quality", "should_trigger": true},
+  {"query": "filter papers based on inclusion criteria", "should_trigger": true},
+  {"query": "which papers should I keep from my search results", "should_trigger": true},
+  {"query": "screen papers for my literature review session", "should_trigger": true},
+  {"query": "step 3 of my research pipeline", "should_trigger": true},
+  {"query": "apply PICO criteria to filter my paper collection", "should_trigger": true},
+  {"query": "rank these papers by quality and relevance", "should_trigger": true},
+  {"query": "我剛完成 research-search，請幫我篩選", "should_trigger": true},
+  {"query": "search for papers about machine learning", "should_trigger": false},
+  {"query": "help me write a literature review", "should_trigger": false},
+  {"query": "summarize this paper for me", "should_trigger": false},
+  {"query": "create a new research session", "should_trigger": false},
+  {"query": "export my shortlisted papers to a spreadsheet", "should_trigger": false},
+  {"query": "what are the gaps in this research area", "should_trigger": false},
+  {"query": "help me find full text PDFs", "should_trigger": false}
+]

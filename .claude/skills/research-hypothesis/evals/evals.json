@@ -1,0 +1,77 @@
+{
+  "skill_name": "research-hypothesis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Lock GAP_001, drop GAP_002 and GAP_003. Generate the hypothesis for security-aware patch generation.",
+      "expected_output": "step8_hypothesis_specification.md with 3-4 RQs about security-aware APR, formal H0/H1 hypotheses with quantified expectations derived from SOTA (e.g., vulnerability rate reduction), IN/OUT scope covering LLM-based repair + security validation but excluding non-LLM repair approaches, and step8_journal_recommendations.md with SE/security journals. Bilingual throughout.",
+      "files": [
+        "Research/20260410_llm-automated-program-repair/step7_gap_analysis.md",
+        "Research/20260410_llm-automated-program-repair/step6_sota_review.md",
+        "Research/20260410_llm-automated-program-repair/step0_session_config.json"
+      ],
+      "expectations": [
+        "step8_hypothesis_specification.md exists and contains YAML frontmatter with selected_gap: GAP_001",
+        "step8_journal_recommendations.md exists and recommends at least 3 journals",
+        "At least 3 research questions (RQ1, RQ2, RQ3) are defined",
+        "Primary hypothesis H1 includes a directional, testable statement about security-aware patch generation",
+        "Null hypothesis H0 is explicitly stated as the logical negation of H1",
+        "IN scope table covers at minimum: Population, Intervention/Method, Comparison, Primary Outcome, Design",
+        "OUT scope table has at least 2 exclusions, each with an academically defensible rationale",
+        "Hypotheses reference specific quantitative metrics or benchmarks from the SOTA review (e.g., vulnerability rates, Defects4J counts)",
+        "A suggested statistical approach is named for the primary hypothesis",
+        "Content is bilingual — both English and Traditional Chinese appear in substantive sections",
+        "Gap-to-Hypothesis traceability table exists linking RQs and hypotheses back to GAP_001 evidence",
+        "Journal recommendations include impact factors and scope fit explanations"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "我想鎖定 GAP_001，就是那個關於 biomarker-personalized NF 缺乏假回饋對照 RCT 的缺口。幫我生成假說。",
+      "expected_output": "step8_hypothesis_specification.md with RQs about sham-controlled RCT for biomarker-personalized neurofeedback in ADHD children, H0/H1 about NF specificity when personalized by EEG phenotype, IN/OUT scope covering specific populations and NF protocol types, journal recommendations targeting clinical neuroscience / ADHD journals. Bilingual. Should handle Chinese user input naturally.",
+      "files": [
+        "Research/20260410_eeg-adhd-children/step7_gap_analysis.md",
+        "Research/20260410_eeg-adhd-children/step6_sota_review.md",
+        "Research/20260410_eeg-adhd-children/step0_session_config.json"
+      ],
+      "expectations": [
+        "step8_hypothesis_specification.md exists and contains YAML frontmatter with selected_gap: GAP_001",
+        "step8_journal_recommendations.md exists and recommends at least 3 journals",
+        "At least 3 research questions (RQ1, RQ2, RQ3) are defined",
+        "Primary hypothesis H1 addresses sham-controlled RCT for biomarker-personalized neurofeedback",
+        "Null hypothesis H0 is explicitly stated",
+        "IN scope specifies a pediatric/child ADHD population consistent with the session topic",
+        "OUT scope table has at least 2 exclusions with rationale",
+        "Content is bilingual — both English and Traditional Chinese appear in substantive sections (RQs, hypotheses, scope)",
+        "The hypothesis references specific papers or effect sizes from the SOTA review (citation keys used)",
+        "A suggested statistical approach is named for the primary hypothesis",
+        "The skill correctly identified GAP_001 from the Chinese user input",
+        "Journal recommendations target clinical neuroscience, ADHD, or neurofeedback-relevant journals"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want to go with the long-term durability gap — GAP_001. But I should mention we can only do a 12-month observational follow-up study, no new RCT. Please generate hypothesis accordingly.",
+      "expected_output": "step8_hypothesis_specification.md that respects the user's methodological constraint (observational follow-up, not RCT). RQs should be framed around durability assessment rather than treatment efficacy. H1 should predict maintenance of effects at 6/12 months. IN scope should specify observational design; OUT scope should explicitly exclude new treatment administration. Journal recommendations should target journals receptive to follow-up/observational studies. Bilingual.",
+      "files": [
+        "Research/20260410_bci-depression-treatment/step7_gap_analysis.md",
+        "Research/20260410_bci-depression-treatment/step6_sota_review.md",
+        "Research/20260410_bci-depression-treatment/step0_session_config.json"
+      ],
+      "expectations": [
+        "step8_hypothesis_specification.md exists and contains YAML frontmatter with selected_gap: GAP_001",
+        "step8_journal_recommendations.md exists and recommends at least 3 journals",
+        "At least 3 research questions are defined",
+        "Study design in IN scope is observational/follow-up, NOT RCT — respecting user constraint",
+        "OUT scope explicitly excludes new treatment administration or RCT design, with rationale",
+        "Timeframe in IN scope references 12 months or 12-month follow-up",
+        "Primary hypothesis H1 is about durability/maintenance of effects, not treatment efficacy",
+        "Null hypothesis H0 is explicitly stated",
+        "Content is bilingual — both English and Traditional Chinese appear in substantive sections",
+        "The hypothesis references specific papers or effect sizes from the SOTA review",
+        "A suggested statistical approach is named (appropriate for longitudinal/observational data)",
+        "Journal recommendations include journals receptive to observational or follow-up studies"
+      ]
+    }
+  ]
+}

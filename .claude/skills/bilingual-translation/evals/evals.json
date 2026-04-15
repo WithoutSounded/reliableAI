@@ -1,0 +1,51 @@
+{
+  "skill_name": "bilingual-translation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Please translate this paper excerpt into a bilingual English-Chinese note and save it as an Obsidian .md file:\n\nAttention Is All You Need\nAuthors: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, Illia Polosukhin\nPublished: 2017, NeurIPS\n\nAbstract:\nThe dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show that these models are superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.\n\n1. Introduction\nRecurrent neural networks, long short-term memory and gated recurrent neural networks in particular, have been firmly established as state of the art approaches in sequence modeling and transduction problems such as language modeling and machine translation. Numerous efforts have since continued to push the boundaries of recurrent language models and encoder-decoder architectures.\n\nRecurrent models typically factor computation along the symbol positions of the input and output sequences. Aligning the positions to steps in computation time, they generate a sequence of hidden states ht, as a function of the previous hidden state ht−1 and the input for position t. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples. Recent work has achieved significant improvements in computational efficiency through factorization tricks and conditional computation, while also improving model quality in case of the latter. The fundamental constraint of sequential computation, however, remains.",
+      "expected_output": "An Obsidian .md file with: (1) title with both English and Chinese, (2) abstract summary in Chinese, (3) paragraph-by-paragraph callout pairs with [!quote] Original and [!note] 翻譯, (4) technical terms like Transformer, BLEU, encoder/decoder preserved in parentheses",
+      "files": [],
+      "expectations": [
+        "Output is a .md file saved to the Obsidian Vault",
+        "Contains a [!abstract] 重點摘要 section with bullet points in Chinese",
+        "Each English paragraph appears in a [!quote] Original callout block",
+        "Each Chinese translation appears in a [!note] 翻譯 callout block",
+        "Technical terms like Transformer, BLEU, encoder, decoder appear in parentheses after Chinese translations on first occurrence",
+        "Paper metadata (authors, year, venue) is included",
+        "Paragraph pairs are separated by horizontal rules (---)",
+        "Section headings appear in both English and Chinese"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Translate this API documentation into a bilingual note:\n\nOpenAI API: Chat Completions\n\nThe Chat Completions API allows you to build conversational AI applications. Given a list of messages comprising a conversation, the model will return a generated response.\n\nEndpoint\nPOST https://api.openai.com/v1/chat/completions\n\nRequest Body\n- model (string, required): ID of the model to use. See the model endpoint compatibility table for details on which models work with the Chat API.\n- messages (array, required): A list of messages comprising the conversation so far. Each message is an object with a `role` field (\"system\", \"user\", or \"assistant\") and a `content` field containing the message text.\n- temperature (number, optional): What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.\n\nExample Request:\n```python\nfrom openai import OpenAI\nclient = OpenAI()\n\nresponse = client.chat.completions.create(\n    model=\"gpt-4\",\n    messages=[\n        {\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},\n        {\"role\": \"user\", \"content\": \"Hello!\"}\n    ],\n    temperature=0.7\n)\nprint(response.choices[0].message.content)\n```\n\nResponse Format\nThe API returns a JSON object containing:\n- id: A unique identifier for the completion\n- choices: An array of completion choices. Each choice contains a `message` object with `role` and `content` fields.\n- usage: Token usage statistics including `prompt_tokens`, `completion_tokens`, and `total_tokens`.",
+      "expected_output": "An Obsidian .md file with bilingual callout pairs, code blocks preserved untranslated in Original, code blocks with translated comments in 翻譯, API terms kept in English",
+      "files": [],
+      "expectations": [
+        "Output is a .md file saved to the Obsidian Vault",
+        "Contains a [!abstract] 重點摘要 section",
+        "Code blocks are preserved exactly as-is in the [!quote] Original callouts",
+        "Code blocks in [!note] 翻譯 callouts keep the code untranslated but surrounding text is translated",
+        "API terms like endpoint, POST, JSON, token remain in English in the Chinese translation",
+        "Parameter names (model, messages, temperature) stay in English in both callouts",
+        "Paragraph pairs are separated by horizontal rules (---)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "幫我把這篇文章翻譯成中英對照筆記：\n\nThe Rise of Small Language Models\n\nFor years, the AI industry has been obsessed with scale. Bigger models, more parameters, larger datasets — the mantra was clear: go big or go home. GPT-4, with its rumored trillion-plus parameters, and Google's Gemini Ultra represented the pinnacle of this philosophy.\n\nBut a quiet revolution is underway. Small language models (SLMs) — typically ranging from 1 billion to 7 billion parameters — are proving that bigger isn't always better. Companies like Microsoft (with Phi-3), Meta (with Llama 3.2), and Mistral AI are showing that carefully curated training data and clever architectures can produce models that punch far above their weight.\n\nThe appeal is practical. Running a 70-billion-parameter model requires expensive GPU clusters and consumes enormous amounts of energy. A 3-billion-parameter model, by contrast, can run on a laptop. For many real-world applications — customer service chatbots, document summarization, code completion — a well-trained small model performs nearly as well as its giant counterpart at a fraction of the cost.\n\nThis shift has profound implications for AI democratization. When powerful models can run on consumer hardware, the barrier to entry drops dramatically. Startups in developing countries, individual researchers, and small businesses can all participate in the AI revolution without needing million-dollar compute budgets.\n\nThe future of AI may not be about who has the biggest model, but who uses their parameters most efficiently.",
+      "expected_output": "An Obsidian .md file with bilingual callout pairs, summary at top, casual/readable tone matching the original article style",
+      "files": [],
+      "expectations": [
+        "Output is a .md file saved to the Obsidian Vault",
+        "Contains a [!abstract] 重點摘要 section summarizing key points",
+        "Each paragraph has a [!quote] Original and [!note] 翻譯 callout pair",
+        "Company and model names (GPT-4, Gemini Ultra, Phi-3, Llama 3.2, Mistral AI) preserved in English",
+        "Technical terms like SLM/parameters appear with English in parentheses on first use",
+        "Translation tone matches the casual/journalistic style of the original",
+        "All 5 body paragraphs are translated — none skipped"
+      ]
+    }
+  ]
+}

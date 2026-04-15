@@ -1,0 +1,127 @@
+\documentclass[a4paper,fleqn]{cas-dc}
+
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title[mode=title]{Multimodal Fusion for Industrial Anomaly Detection}
+
+\author[1]{Wei Chen}
+\cormark[1]
+\ead{wei.chen@nthu.edu.tw}
+
+\author[2]{John Smith}
+
+\affiliation[1]{organization={National Tsing Hua University},
+  addressline={101 Sec. 2 Kuang-Fu Rd.},
+  city={Hsinchu},
+  postcode={30013},
+  country={Taiwan}}
+
+\affiliation[2]{organization={Massachusetts Institute of Technology},
+  addressline={77 Massachusetts Ave.},
+  city={Cambridge},
+  state={MA},
+  postcode={02139},
+  country={USA}}
+
+\cortext[1]{Corresponding author}
+
+\begin{abstract}
+Industrial anomaly detection has become critical for smart manufacturing,
+where early identification of process deviations can prevent costly failures.
+We propose a multimodal fusion architecture that combines visual inspection
+images with time-series sensor data to detect anomalies in real time.
+Building on the attention-based framework of \citep{smith2020}, our method
+introduces a cross-modal alignment module that learns shared representations
+across heterogeneous sensor streams. The fusion is performed at an intermediate
+feature level, preserving modality-specific information while enabling joint
+reasoning. We evaluate on three industrial benchmark datasets: MVTec AD,
+a printed circuit board inspection dataset we collected in-house, and
+a public turbine vibration dataset. Our approach achieves state-of-the-art
+image-level AUROC of 98.2 percent on MVTec AD, outperforming the strongest
+baseline by 2.1 points. On the PCB dataset the gain is 4.7 points, and on
+the turbine dataset we observe consistent improvements across all fault
+types. Ablations confirm that both the cross-modal alignment module and
+the intermediate-level fusion are essential; removing either drops
+performance substantially. We further analyze failure cases and discuss
+deployment considerations including model compression and edge inference.
+\end{abstract}
+
+\begin{keywords}
+anomaly detection \sep multimodal learning \sep smart manufacturing \sep sensor fusion
+\end{keywords}
+
+\begin{highlights}
+\item A cross-modal alignment module fuses vision and sensor streams
+\item Evaluated on three industrial benchmarks including a new PCB dataset
+\item State-of-the-art performance on MVTec AD, PCB inspection, and turbine vibration detection benchmarks
+\item Ablations confirm both fusion module and alignment are essential
+\end{highlights}
+
+\section{Introduction}
+
+Industrial anomaly detection is foundational to smart manufacturing
+\citep{smith2020,doe2021}. Our architecture is shown in Figure~\ref{fig:arch}.
+The color images are preprocessed before feature extraction.
+
+\section{Related Work}
+
+Prior approaches to multimodal fusion \citep{jones2022,brown2023} have
+largely focused on late fusion strategies.
+
+\section{Method}
+
+Figure~\ref{fig:arch} depicts the overall pipeline. The cross-modal
+alignment loss is defined as
+\begin{equation}
+L_\text{align} = \| \phi_v(x_v) - \phi_s(x_s) \|_2^2.
+\end{equation}
+
+\begin{figure}
+\includegraphics[width=\linewidth]{arch.pdf}
+\caption{Architecture overview of the proposed multimodal fusion pipeline.}
+\label{fig:arch}
+\end{figure}
+
+\section{Experiments}
+
+Results on the three benchmarks are shown in Figure~\ref{fig:results}.
+
+\begin{figure}
+\includegraphics[width=\linewidth]{results.pdf}
+\caption{Quantitative results on three benchmark datasets.}
+\label{fig:results}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\linewidth]{ablation.pdf}
+\caption{Ablation study.}
+\label{fig:ablation}
+\end{figure}
+
+\section{Conclusion}
+
+We analyse the behaviour of our model and find it optimises the cross-modal
+objective effectively. We believe this opens promising directions.
+
+\section*{Acknowledgements}
+
+We thank the anonymous reviewers for their helpful comments.
+
+\section*{CRediT authorship contribution statement}
+
+\textbf{Wei Chen:} Conceptualization, Methodology, Software, Writing -- original draft.
+\textbf{John Smith:} Supervision, Writing -- review \& editing.
+
+\section*{Declaration of competing interest}
+
+The authors declare that they have no known competing financial interests
+or personal relationships that could have appeared to influence the work
+reported in this paper.
+
+\bibliographystyle{cas-model2-names}
+\bibliography{refs}
+
+\end{document}

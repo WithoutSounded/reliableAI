@@ -1,0 +1,241 @@
+{
+  "skill_name": "research-search",
+  "evals": [
+    {
+      "id": 0,
+      "name": "biomedical-eeg-adhd",
+      "prompt": "research-search — session folder is at Research/20260410_eeg-adhd-children/. Run the full literature search.",
+      "expected_output": "Searches all 4 sources (Semantic Scholar, OpenAlex, PubMed, arXiv). Deduplicates by DOI + fuzzy title. Runs snowball from top-cited seeds. Builds citation network with hub papers and clusters. Saves step2_raw_papers.json with 30-60 unique papers. Reports bilingual summary table.",
+      "files": [
+        "Research/20260410_eeg-adhd-children/step0_session_config.json",
+        "Research/20260410_eeg-adhd-children/step1_search_queries.md"
+      ],
+      "assertions": [
+        {
+          "name": "output_file_exists",
+          "type": "file_exists",
+          "description": "step2_raw_papers.json exists in the session folder"
+        },
+        {
+          "name": "valid_json_structure",
+          "type": "file_content",
+          "description": "step2_raw_papers.json is valid JSON with 'papers' array and 'search_summary' object"
+        },
+        {
+          "name": "paper_count_target",
+          "type": "content_check",
+          "description": "At least 20 unique papers in the papers array"
+        },
+        {
+          "name": "metadata_completeness",
+          "type": "content_check",
+          "description": "Every paper has non-null title, authors, year, and abstract fields"
+        },
+        {
+          "name": "doi_present",
+          "type": "content_check",
+          "description": "At least 70% of papers have a non-null DOI"
+        },
+        {
+          "name": "multi_source_search",
+          "type": "content_check",
+          "description": "Papers come from at least 2 different sources (checked via sources_found_in or search_summary.sources)"
+        },
+        {
+          "name": "deduplication_performed",
+          "type": "content_check",
+          "description": "search_summary shows total_raw_results > final_count, indicating dedup occurred"
+        },
+        {
+          "name": "snowball_performed",
+          "type": "content_check",
+          "description": "At least one paper has found_via set to 'snowball'"
+        },
+        {
+          "name": "citation_network_present",
+          "type": "content_check",
+          "description": "At least some papers have a citation_network field with in_degree/out_degree"
+        },
+        {
+          "name": "hub_papers_identified",
+          "type": "content_check",
+          "description": "search_summary.hub_papers is a non-empty array"
+        },
+        {
+          "name": "bilingual_summary",
+          "type": "content_check",
+          "description": "summary.md contains both English and Traditional Chinese text"
+        },
+        {
+          "name": "config_updated",
+          "type": "file_content",
+          "description": "step0_session_config.json has current_step set to 2"
+        },
+        {
+          "name": "includes_pubmed",
+          "type": "content_check",
+          "description": "For this biomedical topic, PubMed is included as a source"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "cs-llm-program-repair",
+      "prompt": "開始搜尋論文吧，session 在 Research/20260410_llm-automated-program-repair/",
+      "expected_output": "Adapts source selection for CS topic — skips PubMed, focuses on Semantic Scholar + OpenAlex + arXiv. Produces step2_raw_papers.json with valid metadata. Citation network analysis identifies clusters around LLM-based vs traditional APR methods.",
+      "files": [
+        "Research/20260410_llm-automated-program-repair/step0_session_config.json",
+        "Research/20260410_llm-automated-program-repair/step1_search_queries.md"
+      ],
+      "assertions": [
+        {
+          "name": "output_file_exists",
+          "type": "file_exists",
+          "description": "step2_raw_papers.json exists in the session folder"
+        },
+        {
+          "name": "valid_json_structure",
+          "type": "file_content",
+          "description": "step2_raw_papers.json is valid JSON with 'papers' array and 'search_summary' object"
+        },
+        {
+          "name": "paper_count_target",
+          "type": "content_check",
+          "description": "At least 20 unique papers in the papers array"
+        },
+        {
+          "name": "metadata_completeness",
+          "type": "content_check",
+          "description": "Every paper has non-null title, authors, year, and abstract fields"
+        },
+        {
+          "name": "doi_present",
+          "type": "content_check",
+          "description": "At least 70% of papers have a non-null DOI"
+        },
+        {
+          "name": "multi_source_search",
+          "type": "content_check",
+          "description": "Papers come from at least 2 different sources"
+        },
+        {
+          "name": "deduplication_performed",
+          "type": "content_check",
+          "description": "search_summary shows total_raw_results > final_count, indicating dedup occurred"
+        },
+        {
+          "name": "snowball_performed",
+          "type": "content_check",
+          "description": "At least one paper has found_via set to 'snowball'"
+        },
+        {
+          "name": "citation_network_present",
+          "type": "content_check",
+          "description": "At least some papers have a citation_network field with in_degree/out_degree"
+        },
+        {
+          "name": "hub_papers_identified",
+          "type": "content_check",
+          "description": "search_summary.hub_papers is a non-empty array"
+        },
+        {
+          "name": "bilingual_summary",
+          "type": "content_check",
+          "description": "summary.md contains both English and Traditional Chinese text"
+        },
+        {
+          "name": "config_updated",
+          "type": "file_content",
+          "description": "step0_session_config.json has current_step set to 2"
+        },
+        {
+          "name": "skips_pubmed",
+          "type": "content_check",
+          "description": "For this CS topic, PubMed should NOT appear in the sources used"
+        },
+        {
+          "name": "includes_arxiv",
+          "type": "content_check",
+          "description": "arXiv is included as a source for this CS/AI topic"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "cross-disciplinary-bci-depression",
+      "prompt": "I've just finished research-init for BCI depression treatment. Please proceed with the deep search. Session: Research/20260410_bci-depression-treatment/",
+      "expected_output": "Handles cross-disciplinary topic spanning neuroscience + engineering. Uses all 4 sources. Snowball search catches foundational BCI and depression papers. Citation clusters reflect the two camps (EEG-based vs fMRI-based neurofeedback). Bilingual summary.",
+      "files": [
+        "Research/20260410_bci-depression-treatment/step0_session_config.json",
+        "Research/20260410_bci-depression-treatment/step1_search_queries.md"
+      ],
+      "assertions": [
+        {
+          "name": "output_file_exists",
+          "type": "file_exists",
+          "description": "step2_raw_papers.json exists in the session folder"
+        },
+        {
+          "name": "valid_json_structure",
+          "type": "file_content",
+          "description": "step2_raw_papers.json is valid JSON with 'papers' array and 'search_summary' object"
+        },
+        {
+          "name": "paper_count_target",
+          "type": "content_check",
+          "description": "At least 20 unique papers in the papers array"
+        },
+        {
+          "name": "metadata_completeness",
+          "type": "content_check",
+          "description": "Every paper has non-null title, authors, year, and abstract fields"
+        },
+        {
+          "name": "doi_present",
+          "type": "content_check",
+          "description": "At least 70% of papers have a non-null DOI"
+        },
+        {
+          "name": "multi_source_search",
+          "type": "content_check",
+          "description": "Papers come from at least 3 different sources (cross-disciplinary should hit more sources)"
+        },
+        {
+          "name": "deduplication_performed",
+          "type": "content_check",
+          "description": "search_summary shows total_raw_results > final_count, indicating dedup occurred"
+        },
+        {
+          "name": "snowball_performed",
+          "type": "content_check",
+          "description": "At least one paper has found_via set to 'snowball'"
+        },
+        {
+          "name": "citation_network_present",
+          "type": "content_check",
+          "description": "At least some papers have a citation_network field with in_degree/out_degree"
+        },
+        {
+          "name": "hub_papers_identified",
+          "type": "content_check",
+          "description": "search_summary.hub_papers is a non-empty array"
+        },
+        {
+          "name": "citation_clusters_detected",
+          "type": "content_check",
+          "description": "search_summary.clusters contains at least 2 clusters with descriptive names"
+        },
+        {
+          "name": "bilingual_summary",
+          "type": "content_check",
+          "description": "summary.md contains both English and Traditional Chinese text"
+        },
+        {
+          "name": "config_updated",
+          "type": "file_content",
+          "description": "step0_session_config.json has current_step set to 2"
+        }
+      ]
+    }
+  ]
+}

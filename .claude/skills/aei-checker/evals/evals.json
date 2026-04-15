@@ -1,0 +1,29 @@
+{
+  "skill_name": "aei-checker",
+  "evals": [
+    {
+      "id": 0,
+      "name": "multiple-fails",
+      "prompt": "check my paper for AEI compliance. Main file is paper.tex, bib is refs.bib.",
+      "expected_output": "Report should flag: wrong document class (elsarticle not cas-dc/cas-sc); missing affiliations with country; missing corresponding author email; abstract >250 words AND contains a citation; missing Highlights; missing Acknowledgements, CRediT, competing interest, data availability; author-year bib style (plainnat); all bib entries missing DOI; journals not abbreviated (e.g., 'Journal of Machine Learning Research'); unused bib entry 'unused2019'.",
+      "files": ["paper.tex", "refs.bib"],
+      "assertions": []
+    },
+    {
+      "id": 1,
+      "name": "partial-compliance",
+      "prompt": "check my paper for AEI compliance",
+      "expected_output": "Report should flag: abstract contains a \\citep{} citation; highlight 3 exceeds 85 characters; missing Data availability section; missing Declaration of generative AI use; figure fig:ablation is defined but never referenced; 2 bib entries missing DOI (doe2021, brown2023); 2 journals not abbreviated ('Advanced Engineering Informatics', 'Journal of Manufacturing Systems'); mixed American/British spelling (analyse/behaviour/optimises vs. color). Should PASS: document class cas-dc, title page, keywords count, Acknowledgements, CRediT, competing interest.",
+      "files": ["paper.tex", "refs.bib"],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "name": "near-compliant",
+      "prompt": "check my paper for AEI compliance please",
+      "expected_output": "Report should mostly PASS. Only meaningful issue: bib entry jones2022 has journal spelled out as 'Journal of Manufacturing Systems' (should be 'J. Manuf. Syst.'). All other checks should pass — this tests the skill's ability to avoid false positives on a near-compliant paper.",
+      "files": ["paper.tex", "refs.bib"],
+      "assertions": []
+    }
+  ]
+}
