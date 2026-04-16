@@ -4,7 +4,7 @@
   "topic_original": "LLM Uncertainty Quantification",
   "topic_slug": "llm-uncertainty-quantification",
   "timestamp": "2026-04-15T00:00:00+08:00",
-  "current_step": 1,
+  "current_step": 9,
   "pico": {
     "population": "Large Language Models (autoregressive transformer-based), including both open-weight models (LLaMA, Mistral, Qwen) and API-only/black-box models (GPT-4, Claude, Gemini)",
     "intervention": "Uncertainty quantification methods for generation: semantic entropy, verbalized confidence (self-verbalized uncertainty), P(True)/self-evaluation, consistency-based sampling (SelfCheckGPT), ensemble/MC-dropout, attention-based signals, length-normalized likelihood, token-to-sequence aggregation",

@@ -1,0 +1,2696 @@
+{
+  "session_id": "20260415",
+  "topic": "LLM Uncertainty Quantification",
+  "search_timestamp": "2026-04-15T18:05:00+08:00",
+  "search_summary": {
+    "total_raw_results": 247,
+    "after_dedup": 242,
+    "after_topical_filter": 67,
+    "final_count": 67,
+    "sources_queried": [
+      "semantic_scholar",
+      "openalex",
+      "arxiv"
+    ],
+    "sources_successful": [
+      "semantic_scholar",
+      "openalex"
+    ],
+    "sources_rate_limited": [
+      "semantic_scholar (Q2/Q4/Q5)",
+      "arxiv (all queries)"
+    ],
+    "sources_breakdown": {
+      "openalex": 47,
+      "semantic_scholar": 20
+    },
+    "queries_contribution": {
+      "snowball": 2,
+      "Q5": 6,
+      "Q3": 14,
+      "seed": 8,
+      "Q2": 11,
+      "Q4": 16,
+      "Q1": 10
+    },
+    "doi_coverage": "59/67 (88%)",
+    "user_seeds_recovered": [
+      "paper_004",
+      "paper_005",
+      "paper_007",
+      "paper_017",
+      "paper_018",
+      "paper_019",
+      "paper_024",
+      "paper_031",
+      "paper_040",
+      "paper_045"
+    ],
+    "user_seeds_count": "10/10",
+    "hub_papers": [
+      "paper_001",
+      "paper_007"
+    ],
+    "clusters": [
+      {
+        "name": "calibration_metrics_theory",
+        "size": 15,
+        "paper_ids": [
+          "paper_013",
+          "paper_016",
+          "paper_021",
+          "paper_027",
+          "paper_032",
+          "paper_035",
+          "paper_036",
+          "paper_039",
+          "paper_041",
+          "paper_045",
+          "paper_051",
+          "paper_060",
+          "paper_062",
+          "paper_063",
+          "paper_067"
+        ],
+        "theme": "Calibration metrics (ECE/Brier) and selective prediction theory / 校準指標與選擇性預測理論"
+      },
+      {
+        "name": "epistemic_aleatoric",
+        "size": 13,
+        "paper_ids": [
+          "paper_014",
+          "paper_023",
+          "paper_024",
+          "paper_025",
+          "paper_026",
+          "paper_028",
+          "paper_033",
+          "paper_044",
+          "paper_046",
+          "paper_048",
+          "paper_049",
+          "paper_052",
+          "paper_061"
+        ],
+        "theme": "Epistemic vs aleatoric uncertainty decomposition / 認知/偶然不確定性分解"
+      },
+      {
+        "name": "hallucination_detection",
+        "size": 9,
+        "paper_ids": [
+          "paper_004",
+          "paper_008",
+          "paper_009",
+          "paper_010",
+          "paper_011",
+          "paper_022",
+          "paper_030",
+          "paper_042",
+          "paper_065"
+        ],
+        "theme": "Hallucination detection and factuality / 幻覺偵測與事實性"
+      },
+      {
+        "name": "verbalized_self_confidence",
+        "size": 8,
+        "paper_ids": [
+          "paper_007",
+          "paper_017",
+          "paper_018",
+          "paper_020",
+          "paper_034",
+          "paper_040",
+          "paper_056",
+          "paper_058"
+        ],
+        "theme": "Verbalized confidence and P(True) self-evaluation / 語言化信心與 P(True) 自評"
+      },
+      {
+        "name": "attention_internal_signals",
+        "size": 7,
+        "paper_ids": [
+          "paper_006",
+          "paper_031",
+          "paper_053",
+          "paper_054",
+          "paper_057",
+          "paper_059",
+          "paper_064"
+        ],
+        "theme": "Attention-based and internal-state UQ signals / 基於注意力與內部狀態的不確定性訊號"
+      },
+      {
+        "name": "retrieval_agentic",
+        "size": 5,
+        "paper_ids": [
+          "paper_012",
+          "paper_015",
+          "paper_037",
+          "paper_043",
+          "paper_055"
+        ],
+        "theme": "Retrieval-augmented and agentic LLM uncertainty / RAG 與代理式 LLM 不確定性"
+      },
+      {
+        "name": "general_uq",
+        "size": 4,
+        "paper_ids": [
+          "paper_003",
+          "paper_047",
+          "paper_050",
+          "paper_066"
+        ],
+        "theme": "General UQ methods / 一般不確定性量化方法"
+      },
+      {
+        "name": "survey_position",
+        "size": 2,
+        "paper_ids": [
+          "paper_001",
+          "paper_038"
+        ],
+        "theme": "Survey / position papers / 綜述與立場論文"
+      },
+      {
+        "name": "consistency_sampling",
+        "size": 2,
+        "paper_ids": [
+          "paper_005",
+          "paper_029"
+        ],
+        "theme": "Consistency-based sampling (SelfCheckGPT family) / 一致性取樣"
+      },
+      {
+        "name": "domain_application",
+        "size": 1,
+        "paper_ids": [
+          "paper_002"
+        ],
+        "theme": "Domain applications (medical/code/multilingual) / 領域應用"
+      },
+      {
+        "name": "semantic_entropy_family",
+        "size": 1,
+        "paper_ids": [
+          "paper_019"
+        ],
+        "theme": "Semantic entropy family / 語意熵族"
+      }
+    ]
+  },
+  "papers": [
+    {
+      "id": "paper_001",
+      "title": "Survey of Hallucination in Natural Language Generation",
+      "authors": [
+        "Ziwei Ji",
+        "Nayeon Lee",
+        "Rita Frieske",
+        "Tiezheng Yu",
+        "Dan Su",
+        "Yan Xu",
+        "Etsuko Ishii",
+        "Ye Jin Bang",
+        "Andrea Madotto",
+        "Pascale Fung"
+      ],
+      "year": 2022,
+      "journal": "ACM Computing Surveys",
+      "doi": "10.1145/3571730",
+      "url": "https://openalex.org/W4309674289",
+      "abstract": "Natural Language Generation (NLG) has improved exponentially in recent years thanks to the development of sequence-to-sequence deep learning technologies such as Transformer-based language models. This advancement has led to more fluent and coherent NLG, leading to improved development in downstream tasks such as abstractive summarization, dialogue generation, and data-to-text generation. However, it is also apparent that deep learning based generation is prone to hallucinate unintended text, which degrades the system performance and fails to meet user expectations in many real-world scenarios. To address this issue, many studies have been presented in measuring and mitigating hallucinated texts, but these have never been reviewed in a comprehensive manner before. In this survey, we thus provide a broad overview of the research progress and challenges in the hallucination problem in NLG. The survey is organized into two parts: (1) a general overview of metrics, mitigation methods, and future directions, and (2) an overview of task-specific research progress on hallucinations in the following downstream tasks, namely abstractive summarization, dialogue generation, generative question answering, data-to-text generation, and machine translation. This survey serves to facilitate collaborative efforts among researchers in tackling the challenge of hallucinated texts in NLG.",
+      "citation_count": 3064,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4309674289",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_004",
+        "paper_005",
+        "paper_011",
+        "paper_030"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": false,
+      "found_via": "snowball",
+      "citation_network": {
+        "in_degree": 4,
+        "out_degree": 0,
+        "is_hub": true,
+        "cluster": "survey_position"
+      }
+    },
+    {
+      "id": "paper_002",
+      "title": "Large language models encode clinical knowledge",
+      "authors": [
+        "Karan Singhal",
+        "Shekoofeh Azizi",
+        "Tao Tu",
+        "S. Sara Mahdavi",
+        "Jason Lee",
+        "Hyung Won Chung",
+        "Nathan Scales",
+        "Ajay Kumar Tanwani",
+        "Heather Cole-Lewis",
+        "Stephen Pfohl",
+        "Perry W. Payne",
+        "Martin Seneviratne",
+        "Paul Gamble",
+        "Christopher Kelly",
+        "Abubakr Babiker",
+        "Nathanael Schärli",
+        "Aakanksha Chowdhery",
+        "P. Mansfield",
+        "Dina Demner‐Fushman",
+        "Blaise Agüera y Arcas",
+        "Dale R. Webster",
+        "Greg S. Corrado",
+        "Yossi Matias",
+        "Katherine Chou",
+        "Juraj Gottweis",
+        "Nenad Tomašev",
+        "Yun Liu",
+        "Alvin Rajkomar",
+        "Joëlle Barral",
+        "Christopher Semturs",
+        "Alan Karthikesalingam",
+        "Vivek Natarajan"
+      ],
+      "year": 2023,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-023-06291-2",
+      "url": "https://openalex.org/W4384071683",
+      "abstract": "Large language models (LLMs) have demonstrated impressive capabilities, but the bar for clinical applications is high. Attempts to assess the clinical knowledge of models typically rely on automated evaluations based on limited benchmarks. Here, to address these limitations, we present MultiMedQA, a benchmark combining six existing medical question answering datasets spanning professional medicine, research and consumer queries and a new dataset of medical questions searched online, HealthSearchQA. We propose a human evaluation framework for model answers along multiple axes including factuality, comprehension, reasoning, possible harm and bias. In addition, we evaluate Pathways Language Model<sup>1</sup> (PaLM, a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM<sup>2</sup> on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA<sup>3</sup>, MedMCQA<sup>4</sup>, PubMedQA<sup>5</sup> and Measuring Massive Multitask Language Understanding (MMLU) clinical topics<sup>6</sup>), including 67.6% accuracy on MedQA (US Medical Licensing Exam-style questions), surpassing the prior state of the art by more than 17%. However, human evaluation reveals key gaps. To resolve this, we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains inferior to clinicians. We show that comprehension, knowledge recall and reasoning improve with model scale and instruction prompt tuning, suggesting the potential utility of LLMs in medicine. Our human evaluations reveal limitations of today's models, reinforcing the importance of both evaluation frameworks and method development in creating safe, helpful LLMs for clinical applications.",
+      "citation_count": 2856,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4384071683",
+      "pubmed_id": "37438534",
+      "arxiv_id": null,
+      "references": [
+        "paper_007",
+        "paper_017"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "domain_application"
+      }
+    },
+    {
+      "id": "paper_003",
+      "title": "Human resource management in the age of generative artificial intelligence: Perspectives and research directions on ChatGPT",
+      "authors": [
+        "Pawan Budhwar",
+        "Soumyadeb Chowdhury",
+        "Geoffrey Wood",
+        "Herman Aguinis",
+        "Greg J. Bamber",
+        "Jose R. Beltran",
+        "Paul Boselie",
+        "Fang Lee Cooke",
+        "Stephanie Decker",
+        "Angelo S. DeNisi",
+        "Prasanta Kumar Dey",
+        "David Guest",
+        "Andrew J. Knoblich",
+        "Ashish Malik",
+        "Jaap Paauwe",
+        "Savvas Papagiannidis",
+        "Charmi Patel",
+        "Vijay Pereira",
+        "Shuang Ren",
+        "Steven G. Rogelberg",
+        "Mark N. K. Saunders",
+        "Rosalie L. Tung",
+        "Arup Varma"
+      ],
+      "year": 2023,
+      "journal": "Human Resource Management Journal",
+      "doi": "10.1111/1748-8583.12524",
+      "url": "https://openalex.org/W4383913712",
+      "abstract": "Abstract ChatGPT and its variants that use generative artificial intelligence (AI) models have rapidly become a focal point in academic and media discussions about their potential benefits and drawbacks across various sectors of the economy, democracy, society, and environment. It remains unclear whether these technologies result in job displacement or creation, or if they merely shift human labour by generating new, potentially trivial or practically irrelevant, information and decisions. According to the CEO of ChatGPT, the potential impact of this new family of AI technology could be as big as “the printing press”, with significant implications for employment, stakeholder relationships, business models, and academic research, and its full consequences are largely undiscovered and uncertain. The introduction of more advanced and potent generative AI tools in the AI market, following the launch of ChatGPT, has ramped up the “AI arms race”, creating continuing uncertainty for workers, expanding their business applications, while heightening risks related to well‐being, bias, misinformation, context insensitivity, privacy issues, ethical dilemmas, and security. Given these developments, this perspectives editorial offers a collection of perspectives and research pathways to extend HRM scholarship in the realm of generative AI. In doing so, the discussion synthesizes the literature on AI and generative AI, connecting it to various aspects of HRM processes, practices, relationships, and outcomes, thereby contributing to shaping the future of HRM research.",
+      "citation_count": 708,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4383913712",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "general_uq"
+      }
+    },
+    {
+      "id": "paper_004",
+      "title": "Detecting hallucinations in large language models using semantic entropy",
+      "authors": [
+        "Sebastian Farquhar",
+        "Jannik Kossen",
+        "Lorenz Kuhn",
+        "Yarin Gal"
+      ],
+      "year": 2024,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-024-07421-0",
+      "url": "https://openalex.org/W4399803256",
+      "abstract": "Large language model (LLM) systems, such as ChatGPT<sup>1</sup> or Gemini<sup>2</sup>, can show impressive reasoning and question-answering capabilities but often 'hallucinate' false outputs and unsubstantiated answers<sup>3,4</sup>. Answering unreliably or without the necessary information prevents adoption in diverse fields, with problems including fabrication of legal precedents<sup>5</sup> or untrue facts in news articles<sup>6</sup> and even posing a risk to human life in medical domains such as radiology<sup>7</sup>. Encouraging truthfulness through supervision or reinforcement has been only partially successful<sup>8</sup>. Researchers need a general method for detecting hallucinations in LLMs that works even with new and unseen questions to which humans might not know the answer. Here we develop new methods grounded in statistics, proposing entropy-based uncertainty estimators for LLMs to detect a subset of hallucinations-confabulations-which are arbitrary and incorrect generations. Our method addresses the fact that one idea can be expressed in many ways by computing uncertainty at the level of meaning rather than specific sequences of words. Our method works across datasets and tasks without a priori knowledge of the task, requires no task-specific data and robustly generalizes to new tasks not seen before. By detecting when a prompt is likely to produce a confabulation, our method helps users understand when they must take extra care with LLMs and opens up new possibilities for using LLMs that are otherwise prevented by their unreliability.",
+      "citation_count": 514,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4399803256",
+      "pubmed_id": "38898292",
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_005",
+        "paper_014"
+      ],
+      "cited_by": [
+        "paper_013",
+        "paper_055"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 2,
+        "out_degree": 3,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_005",
+      "title": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+      "authors": [
+        "Potsawee Manakul",
+        "Adian Liusie",
+        "Mark Gales"
+      ],
+      "year": 2023,
+      "journal": null,
+      "doi": "10.18653/v1/2023.emnlp-main.557",
+      "url": "https://openalex.org/W4389520749",
+      "abstract": "Generative Large Language Models (LLMs) such as GPT-3 are capable of generating highly fluent responses to a wide variety of user prompts. However, LLMs are known to hallucinate facts and make non-factual statements which can undermine trust in their output. Existing fact-checking approaches either require access to the output probability distribution (which may not be available for systems such as ChatGPT) or external databases that are interfaced via separate, often complex, modules. In this work, we propose “SelfCheckGPT”, a simple sampling-based approach that can be used to fact-check the responses of black-box models in a zero-resource fashion, i.e. without an external database. SelfCheckGPT leverages the simple idea that if an LLM has knowledge of a given concept, sampled responses are likely to be similar and contain consistent facts. However, for hallucinated facts, stochastically sampled responses are likely to diverge and contradict one another. We investigate this approach by using GPT-3 to generate passages about individuals from the WikiBio dataset, and manually annotate the factuality of the generated passages. We demonstrate that SelfCheckGPT can: i) detect non-factual and factual sentences; and ii) rank passages in terms of factuality. We compare our approach to several baselines and show that our approach has considerably higher AUC-PR scores in sentence-level hallucination detection and higher correlation scores in passage-level factuality assessment compared to grey-box methods.",
+      "citation_count": 299,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4389520749",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_007",
+        "paper_014",
+        "paper_019"
+      ],
+      "cited_by": [
+        "paper_004"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 4,
+        "is_hub": false,
+        "cluster": "consistency_sampling"
+      }
+    },
+    {
+      "id": "paper_006",
+      "title": "Towards trustworthy rotating machinery fault diagnosis via attention uncertainty in transformer",
+      "authors": [
+        "Yiming Xiao",
+        "Haidong Shao",
+        "Minjie Feng",
+        "Te Han",
+        "Jiafu Wan",
+        "Bin Liu"
+      ],
+      "year": 2023,
+      "journal": "Journal of Manufacturing Systems",
+      "doi": "10.1016/j.jmsy.2023.07.012",
+      "url": "https://openalex.org/W4385392099",
+      "abstract": null,
+      "citation_count": 207,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4385392099",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "attention_internal_signals"
+      }
+    },
+    {
+      "id": "paper_007",
+      "title": "Language Models (Mostly) Know What They Know",
+      "authors": [
+        "Saurav Kadavath",
+        "Tom Conerly",
+        "Amanda Askell",
+        "Tom Henighan",
+        "Dawn Drain",
+        "Ethan Perez",
+        "Nicholas Schiefer",
+        "Zac Hatfield Dodds",
+        "Nova DasSarma",
+        "Eli Tran-Johnson",
+        "Scott G. Johnston",
+        "Sheer El-Showk",
+        "Andy Jones",
+        "Nelson Elhage",
+        "Tristan Hume",
+        "Anna Chen",
+        "Yuntao Bai",
+        "Sam Bowman",
+        "Stanislav Fort",
+        "Deep Ganguli",
+        "Danny Hernandez",
+        "Josh Jacobson",
+        "Jackson Kernion",
+        "Shauna Kravec",
+        "Liane Lovitt",
+        "Kamal Ndousse",
+        "Catherine Olsson",
+        "Sam Ringer",
+        "Dario Amodei",
+        "Tom Brown",
+        "Jack A. Clark",
+        "Nicholas Joseph",
+        "Ben Mann",
+        "Sam McCandlish",
+        "Chris Olah",
+        "Jared Kaplan"
+      ],
+      "year": 2022,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2207.05221",
+      "url": "https://openalex.org/W4285429195",
+      "abstract": "We study whether language models can evaluate the validity of their own claims and predict which questions they will be able to answer correctly. We first show that larger models are well-calibrated on diverse multiple choice and true/false questions when they are provided in the right format. Thus we can approach self-evaluation on open-ended sampling tasks by asking models to first propose answers, and then to evaluate the probability \"P(True)\" that their answers are correct. We find encouraging performance, calibration, and scaling for P(True) on a diverse array of tasks. Performance at self-evaluation further improves when we allow models to consider many of their own samples before predicting the validity of one specific possibility. Next, we investigate whether models can be trained to predict \"P(IK)\", the probability that \"I know\" the answer to a question, without reference to any particular proposed answer. Models perform well at predicting P(IK) and partially generalize across tasks, though they struggle with calibration of P(IK) on new tasks. The predicted P(IK) probabilities also increase appropriately in the presence of relevant source materials in the context, and in the presence of hints towards the solution of mathematical word problems. We hope these observations lay the groundwork for training more honest models, and for investigating how honesty generalizes to cases where models are trained on objectives other than the imitation of human writing.",
+      "citation_count": 159,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4285429195",
+      "pubmed_id": null,
+      "arxiv_id": "2207.05221",
+      "references": [],
+      "cited_by": [
+        "paper_002",
+        "paper_005",
+        "paper_030"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 3,
+        "out_degree": 0,
+        "is_hub": true,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_008",
+      "title": "Sources of Hallucination by Large Language Models on Inference Tasks",
+      "authors": [
+        "Nick McKenna",
+        "Tianyi Li",
+        "Liang Cheng",
+        "Mohammad Javad Hosseini",
+        "Mark Johnson",
+        "Mark Steedman"
+      ],
+      "year": 2023,
+      "journal": null,
+      "doi": "10.18653/v1/2023.findings-emnlp.182",
+      "url": "https://openalex.org/W4389519585",
+      "abstract": "Large Language Models (LLMs) are claimed to be capable of Natural Language Inference (NLI), necessary for applied tasks like question answering and summarization. We present a series of behavioral studies on several LLM families (LLaMA, GPT-3.5, and PaLM) which probe their behavior using controlled experiments. We establish two biases originating from pretraining which predict much of their behavior, and show that these are major sources of hallucination in generative LLMs. First, memorization at the level of sentences: we show that, regardless of the premise, models falsely label NLI test samples as entailing when the hypothesis is attested in training data, and that entities are used as “indices’ to access the memorized data. Second, statistical patterns of usage learned at the level of corpora: we further show a similar effect when the premise predicate is less frequent than that of the hypothesis in the training data, a bias following from previous studies. We demonstrate that LLMs perform significantly worse on NLI test samples which do not conform to these biases than those which do, and we offer these as valuable controls for future LLM evaluation.",
+      "citation_count": 115,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4389519585",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_009",
+      "title": "🧜Siren’s Song in the AI Ocean: A Survey on Hallucination in Large Language Models",
+      "authors": [
+        "Yue Zhang",
+        "Yafu Li",
+        "Leyang Cui",
+        "Cai Deng",
+        "Lemao Liu",
+        "Tingchen Fu",
+        "Xinting Huang",
+        "Enbo Zhao",
+        "Yanwen Zhang",
+        "Yulong Chen",
+        "Longyue Wang",
+        "Ahn Tuan Luu",
+        "Wei Bi",
+        "Freda Shi",
+        "S. Shi"
+      ],
+      "year": 2025,
+      "journal": "Computational Linguistics",
+      "doi": "10.1162/coli.a.16",
+      "url": "https://openalex.org/W4412158322",
+      "abstract": "Abstract While large language models (LLMs) have demonstrated remarkable capabilities across a range of downstream tasks, a significant concern revolves around their propensity to exhibit hallucinations: LLMs occasionally generate content that diverges from the user input, contradicts previously generated context, or misaligns with established world knowledge. This phenomenon poses a substantial challenge to the reliability of LLMs in real-world scenarios. In this article, we survey recent efforts on the detection, explanation, and mitigation of hallucination, with an emphasis on the unique challenges posed by LLMs. We present taxonomies of the LLM hallucination phenomena and evaluation benchmarks, analyze existing approaches aiming at mitigating LLM hallucination, and discuss potential directions for future research.",
+      "citation_count": 112,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4412158322",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_055"
+      ],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_010",
+      "title": "The Era of Artificial Intelligence Deception: Unraveling the Complexities of False Realities and Emerging Threats of Misinformation",
+      "authors": [
+        "S. Williamson",
+        "Victor R. Prybutok"
+      ],
+      "year": 2024,
+      "journal": "Information",
+      "doi": "10.3390/info15060299",
+      "url": "https://openalex.org/W4398256042",
+      "abstract": "This study delves into the dual nature of artificial intelligence (AI), illuminating its transformative potential that has the power to revolutionize various aspects of our lives. We delve into critical issues such as AI hallucinations, misinformation, and unpredictable behavior, particularly in large language models (LLMs) and AI-powered chatbots. These technologies, while capable of manipulating human decisions and exploiting cognitive vulnerabilities, also hold the key to unlocking unprecedented opportunities for innovation and progress. Our research underscores the need for robust, ethical AI development and deployment frameworks, advocating a balance between technological advancement and societal values. We emphasize the importance of collaboration among researchers, developers, policymakers, and end users to steer AI development toward maximizing benefits while minimizing potential harms. This study highlights the critical role of responsible AI practices, including regular training, engagement, and the sharing of experiences among AI users, to mitigate risks and develop the best practices. We call for updated legal and regulatory frameworks to keep pace with AI advancements and ensure their alignment with ethical principles and societal values. By fostering open dialog, sharing knowledge, and prioritizing ethical considerations, we can harness AI’s transformative potential to drive human advancement while managing its inherent risks and challenges.",
+      "citation_count": 106,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4398256042",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_011",
+      "title": "A Mathematical Investigation of Hallucination and Creativity in GPT Models",
+      "authors": [
+        "Minhyeok Lee"
+      ],
+      "year": 2023,
+      "journal": "Mathematics",
+      "doi": "10.3390/math11102320",
+      "url": "https://openalex.org/W4376874793",
+      "abstract": "In this paper, we present a comprehensive mathematical analysis of the hallucination phenomenon in generative pretrained transformer (GPT) models. We rigorously define and measure hallucination and creativity using concepts from probability theory and information theory. By introducing a parametric family of GPT models, we characterize the trade-off between hallucination and creativity and identify an optimal balance that maximizes model performance across various tasks. Our work offers a novel mathematical framework for understanding the origins and implications of hallucination in GPT models and paves the way for future research and development in the field of large language models (LLMs).",
+      "citation_count": 95,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4376874793",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_012",
+      "title": "AI Agents vs. Agentic AI: A Conceptual Taxonomy, Applications and Challenges",
+      "authors": [
+        "Ranjan Sapkota",
+        "Konstantinos I. Roumeliotis",
+        "Manoj Karkee"
+      ],
+      "year": 2025,
+      "journal": "SuperIntelligence - Robotics - Safety & Alignment",
+      "doi": "10.70777/si.v2i3.15161",
+      "url": "https://openalex.org/W4412505619",
+      "abstract": "This review critically distinguishes between AI Agents and Agentic AI, offering a structured, conceptual taxonomy, application mapping, and analysis of opportunities and challenges to clarify their divergent design philosophies and capabilities. We begin by outlining the search strategy and foundational definitions, characterizing AI Agents as modular systems driven and enabled by LLMs and LIMs for taskspecific automation. Generative AI is positioned as a precursor providing the foundation, with AI agents advancing through tool integration, prompt engineering, and reasoning enhancements. We then characterize Agentic AI systems, which, in contrast to AI Agents, represent a paradigm shift marked by multi-agent collaboration, dynamic task decomposition, persistent memory, and coordinated autonomy. Through a chronological evaluation of architectural evolution, operational mechanisms, interaction styles, and autonomy levels, we present a comparative analysis across both AI agents and agentic AI paradigms. Application domains enabled by AI Agents such as customer support, scheduling, and data summarization are then contrasted with Agentic AI deployments in research automation, robotic coordination, and medical decision support. We further examine unique challenges in each paradigm including hallucination, brittleness, emergent behavior, and coordination failure, and propose targeted solutions such as ReAct loops, retrieval-augmented generation (RAG), automation coordination layers, and causal modeling. This work aims to provide a roadmap for developing robust, scalable, and explainable AI-driven systems.",
+      "citation_count": 95,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4412505619",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q5",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "retrieval_agentic"
+      }
+    },
+    {
+      "id": "paper_013",
+      "title": "What large language models know and what people think they know",
+      "authors": [
+        "Mark Steyvers",
+        "Heliodoro Tejeda",
+        "Aakriti Kumar",
+        "Catarina Belém",
+        "Sheer Karny",
+        "Xinyue Hu",
+        "Lukas William Mayer",
+        "Padhraic Smyth"
+      ],
+      "year": 2025,
+      "journal": "Nature Machine Intelligence",
+      "doi": "10.1038/s42256-024-00976-7",
+      "url": "https://openalex.org/W4406679533",
+      "abstract": "Abstract As artificial intelligence systems, particularly large language models (LLMs), become increasingly integrated into decision-making processes, the ability to trust their outputs is crucial. To earn human trust, LLMs must be well calibrated such that they can accurately assess and communicate the likelihood of their predictions being correct. Whereas recent work has focused on LLMs’ internal confidence, less is understood about how effectively they convey uncertainty to users. Here we explore the calibration gap, which refers to the difference between human confidence in LLM-generated answers and the models’ actual confidence, and the discrimination gap, which reflects how well humans and models can distinguish between correct and incorrect answers. Our experiments with multiple-choice and short-answer questions reveal that users tend to overestimate the accuracy of LLM responses when provided with default explanations. Moreover, longer explanations increased user confidence, even when the extra length did not improve answer accuracy. By adjusting LLM explanations to better reflect the models’ internal confidence, both the calibration gap and the discrimination gap narrowed, significantly improving user perception of LLM accuracy. These findings underscore the importance of accurate uncertainty communication and highlight the effect of explanation length in influencing user trust in artificial-intelligence-assisted decision-making environments.",
+      "citation_count": 95,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4406679533",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_004",
+        "paper_018",
+        "paper_045"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_014",
+      "title": "On Hallucination and Predictive Uncertainty in Conditional Language Generation",
+      "authors": [
+        "Yijun Xiao",
+        "William Yang Wang"
+      ],
+      "year": 2021,
+      "journal": null,
+      "doi": "10.18653/v1/2021.eacl-main.236",
+      "url": "https://openalex.org/W3153712677",
+      "abstract": "Despite improvements in performances on different natural language generation tasks, deep neural models are prone to hallucinating facts that are incorrect or nonexistent. Different hypotheses are proposed and examined separately for different tasks, but no systematic explanations are available across these tasks. In this study, we draw connections between hallucinations and predictive uncertainty in conditional language generation. We investigate their relationship in both image captioning and data-to-text generation and propose a simple extension to beam search to reduce hallucination. Our analysis shows that higher predictive uncertainty corresponds to a higher chance of hallucination. Epistemic uncertainty is more indicative of hallucination than aleatoric or total uncertainties. It helps to achieve better results of trading performance in standard metric for less hallucination with the proposed beam search variant.",
+      "citation_count": 71,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W3153712677",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_004",
+        "paper_005"
+      ],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "snowball",
+      "citation_network": {
+        "in_degree": 2,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_015",
+      "title": "Deep learning for safety assessment of nuclear power reactors: Reliability, explainability, and research opportunities",
+      "authors": [
+        "Abiodun Ayodeji",
+        "Muritala Alade Amidu",
+        "Samuel Abiodun Olatubosun",
+        "Yacine Addad",
+        "Hafiz Ahmed"
+      ],
+      "year": 2022,
+      "journal": "Progress in Nuclear Energy",
+      "doi": "10.1016/j.pnucene.2022.104339",
+      "url": "https://openalex.org/W4289516096",
+      "abstract": "Deep learning algorithms provide plausible benefits for efficient prediction and analysis of nuclear reactor safety phenomena. However, research works that discuss the critical challenges with deep learning models from the reactor safety perspective are limited. This article presents the state-of-the-art in deep learning application in nuclear reactor safety analysis, and the inherent limitations in deep learning models. In addition, critical issues such as deep learning model explainability, sensitivity and uncertainty constraints, model reliability, and trustworthiness are discussed from the nuclear safety perspective, and robust solutions to the identified issues are also presented. As a major contribution, a deep feedforward neural network is developed as a surrogate model to predict turbulent eddy viscosity in Reynolds-averaged Navier–Stokes (RANS) simulation. Further, the deep feedforward neural network performance is compared with the conventional Spalart Allmaras closure model in the RANS turbulence closure simulation. In addition, the Shapely Additive Explanation (SHAP) and the local interpretable model-agnostic explanations (LIME) APIs are introduced to explain the deep feedforward neural network predictions. Finally, exciting research opportunities to optimize deep learning-based reactor safety analysis are presented.",
+      "citation_count": 71,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4289516096",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "retrieval_agentic"
+      }
+    },
+    {
+      "id": "paper_016",
+      "title": "Uncertainty Quantification and Confidence Calibration in Large Language Models: A Survey",
+      "authors": [
+        "Xiaoou Liu",
+        "Tiejin Chen",
+        "Longchao Da",
+        "Chacha Chen",
+        "Zhen-Yu Lin",
+        "Hua Wei"
+      ],
+      "year": 2025,
+      "journal": "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+      "doi": "10.1145/3711896.3736569",
+      "url": "https://www.semanticscholar.org/paper/422b00c330a16a00ef182abfd1d66e12369db9e8",
+      "abstract": "Uncertainty quantification (UQ) enhances the reliability of Large Language Models (LLMs) by estimating confidence in outputs, enabling risk mitigation and selective prediction. However, traditional UQ methods struggle with LLMs due to computational constraints and decoding inconsistencies. Moreover, LLMs introduce unique uncertainty sources, such as input ambiguity, reasoning path divergence, and decoding stochasticity, that extend beyond classical aleatoric and epistemic uncertainty. To address this, we introduce a new taxonomy that categorizes UQ methods based on computational efficiency and uncertainty dimensions, including input, reasoning, parameter, and prediction uncertainty. We evaluate existing techniques, summarize existing benchmarks and metrics for UQ, assess their real-world applicability, and identify open challenges, emphasizing the need for scalable, interpretable, and robust UQ approaches to enhance LLM reliability.",
+      "citation_count": 66,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "422b00c330a16a00ef182abfd1d66e12369db9e8",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2503.15850",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_017",
+      "title": "Teaching Models to Express Their Uncertainty in Words",
+      "authors": [
+        "Stephanie Lin",
+        "Jacob Hilton",
+        "Owain Evans"
+      ],
+      "year": 2022,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2205.14334",
+      "url": "https://openalex.org/W4281748205",
+      "abstract": "We show that a GPT-3 model can learn to express uncertainty about its own answers in natural language -- without use of model logits. When given a question, the model generates both an answer and a level of confidence (e.g. \"90% confidence\" or \"high confidence\"). These levels map to probabilities that are well calibrated. The model also remains moderately calibrated under distribution shift, and is sensitive to uncertainty in its own answers, rather than imitating human examples. To our knowledge, this is the first time a model has been shown to express calibrated uncertainty about its own answers in natural language. For testing calibration, we introduce the CalibratedMath suite of tasks. We compare the calibration of uncertainty expressed in words (\"verbalized probability\") to uncertainty extracted from model logits. Both kinds of uncertainty are capable of generalizing calibration under distribution shift. We also provide evidence that GPT-3's ability to generalize calibration depends on pre-trained latent representations that correlate with epistemic uncertainty over its answers.",
+      "citation_count": 54,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4281748205",
+      "pubmed_id": null,
+      "arxiv_id": "2205.14334",
+      "references": [],
+      "cited_by": [
+        "paper_002",
+        "paper_030"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 2,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_018",
+      "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "authors": [
+        "Miao Xiong",
+        "Zhiyuan Hu",
+        "Xinyang Lu",
+        "Yifei Li",
+        "Jie Fu",
+        "Junxian He",
+        "Bryan Hooi"
+      ],
+      "year": 2023,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2306.13063",
+      "url": "https://openalex.org/W4381797997",
+      "abstract": "Empowering large language models to accurately express confidence in their answers is essential for trustworthy decision-making. Previous confidence elicitation methods, which primarily rely on white-box access to internal model information or model fine-tuning, have become less suitable for LLMs, especially closed-source commercial APIs. This leads to a growing need to explore the untapped area of black-box approaches for LLM uncertainty estimation. To better break down the problem, we define a systematic framework with three components: prompting strategies for eliciting verbalized confidence, sampling methods for generating multiple responses, and aggregation techniques for computing consistency. We then benchmark these methods on two key tasks-confidence calibration and failure prediction-across five types of datasets (e.g., commonsense and arithmetic reasoning) and five widely-used LLMs including GPT-4 and LLaMA 2 Chat. Our analysis uncovers several key insights: 1) LLMs, when verbalizing their confidence, tend to be overconfident, potentially imitating human patterns of expressing confidence. 2) As model capability scales up, both calibration and failure prediction performance improve. 3) Employing our proposed strategies, such as human-inspired prompts, consistency among multiple responses, and better aggregation strategies can help mitigate this overconfidence from various perspectives. 4) Comparisons with white-box methods indicate that while white-box methods perform better, the gap is narrow, e.g., 0.522 to 0.605 in AUROC. Despite these advancements, none of these techniques consistently outperform others, and all investigated methods struggle in challenging tasks, such as those requiring professional knowledge, indicating significant scope for improvement. We believe this study can serve as a strong baseline and provide insights for eliciting confidence in black-box LLMs.",
+      "citation_count": 50,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4381797997",
+      "pubmed_id": null,
+      "arxiv_id": "2306.13063",
+      "references": [],
+      "cited_by": [
+        "paper_013"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_019",
+      "title": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+      "authors": [
+        "Lorenz Kuhn",
+        "Yarin Gal",
+        "Sebastian Farquhar"
+      ],
+      "year": 2023,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2302.09664",
+      "url": "https://openalex.org/W4321594373",
+      "abstract": "We introduce a method to measure uncertainty in large language models. For tasks like question answering, it is essential to know when we can trust the natural language outputs of foundation models. We show that measuring uncertainty in natural language is challenging because of \"semantic equivalence\" -- different sentences can mean the same thing. To overcome these challenges we introduce semantic entropy -- an entropy which incorporates linguistic invariances created by shared meanings. Our method is unsupervised, uses only a single model, and requires no modifications to off-the-shelf language models. In comprehensive ablation studies we show that the semantic entropy is more predictive of model accuracy on question answering data sets than comparable baselines.",
+      "citation_count": 49,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4321594373",
+      "pubmed_id": null,
+      "arxiv_id": "2302.09664",
+      "references": [],
+      "cited_by": [
+        "paper_005"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "semantic_entropy_family"
+      }
+    },
+    {
+      "id": "paper_020",
+      "title": "Large language model uncertainty proxies: discrimination and calibration for medical diagnosis and treatment",
+      "authors": [
+        "Thomas Savage",
+        "John Wang",
+        "Robert J. Gallo",
+        "Abdessalem Boukil",
+        "Vishwesh Patel",
+        "Seyed Amir Ahmad Safavi‐Naini",
+        "Ali Soroush",
+        "Jonathan H. Chen"
+      ],
+      "year": 2024,
+      "journal": "Journal of the American Medical Informatics Association",
+      "doi": "10.1093/jamia/ocae254",
+      "url": "https://openalex.org/W4403362497",
+      "abstract": "SC is the most effective method for estimating LLM uncertainty of the proxies evaluated. SC by sentence embedding can effectively estimate uncertainty if the user has a set of reference cases with which to re-calibrate their results, while SC by GPT annotation is the more effective method if the user does not have reference cases and requires accurate raw calibration. Our results confirm LLMs are consistently over-confident when verbalizing their confidence (CE).",
+      "citation_count": 42,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4403362497",
+      "pubmed_id": "39396184",
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_021",
+      "title": "A Survey of Confidence Estimation and Calibration in Large Language Models",
+      "authors": [
+        "Jiahui Geng",
+        "Fengyu Cai",
+        "Yuxia Wang",
+        "Heinz Koeppl",
+        "Preslav Nakov",
+        "Iryna Gurevych"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": "10.18653/v1/2024.naacl-long.366",
+      "url": "https://openalex.org/W4401042444",
+      "abstract": "Jiahui Geng, Fengyu Cai, Yuxia Wang, Heinz Koeppl, Preslav Nakov, Iryna Gurevych. Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers). 2024.",
+      "citation_count": 41,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4401042444",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_022",
+      "title": "DELL: Generating Reactions and Explanations for LLM-Based Misinformation Detection",
+      "authors": [
+        "Herun Wan",
+        "Shangbin Feng",
+        "Zhaoxuan Tan",
+        "Heng Wang",
+        "Yulia Tsvetkov",
+        "Minnan Luo"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": "10.18653/v1/2024.findings-acl.155",
+      "url": "https://openalex.org/W4402670869",
+      "abstract": "Large language models are limited by challenges in factuality and hallucinations to be directly employed off-the-shelf for judging the veracity of news articles, where factual accuracy is paramount.In this work, we propose DELL that identifies three key stages in misinformation detection where LLMs could be incorporated as part of the pipeline: 1) LLMs could generate news reactions to represent diverse perspectives and simulate user-news interaction networks; 2) LLMs could generate explanations for proxy tasks (e.g., sentiment, stance) to enrich the contexts of news articles and produce experts specializing in various aspects of news understanding; 3) LLMs could merge task-specific experts and provide an overall prediction by incorporating the predictions and confidence scores of varying experts.Extensive experiments on seven datasets with three LLMs demonstrate that DELL outperforms state-of-the-art baselines by up to 16.8% in macro f1-score.Further analysis reveals that the generated reactions and explanations are greatly helpful in misinformation detection, while our proposed LLM-guided merging helps produce better-calibrated predictions.",
+      "citation_count": 38,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4402670869",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_023",
+      "title": "From Aleatoric to Epistemic: Exploring Uncertainty Quantification Techniques in Artificial Intelligence",
+      "authors": [
+        "Tianyang Wang",
+        "Yunze Wang",
+        "Jun Zhou",
+        "Benji Peng",
+        "Xinyuan Song",
+        "Charles Zhang",
+        "Xintian Sun",
+        "Qian Niu",
+        "Junyu Liu",
+        "Silin Chen",
+        "Keyu Chen",
+        "Ming Li",
+        "Pohsun Feng",
+        "Ziqian Bi",
+        "Ming Liu",
+        "Yichao Zhang",
+        "Cheng Fei",
+        "Caitlyn Heqi Yin",
+        "Lawrence K.Q. Yan"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2501.03282",
+      "url": "https://www.semanticscholar.org/paper/81abf6b33d5b2c1eae2071e890f5e7b5e5e45231",
+      "abstract": "Uncertainty quantification (UQ) is a critical aspect of artificial intelligence (AI) systems, particularly in high-risk domains such as healthcare, autonomous systems, and financial technology, where decision-making processes must account for uncertainty. This review explores the evolution of uncertainty quantification techniques in AI, distinguishing between aleatoric and epistemic uncertainties, and discusses the mathematical foundations and methods used to quantify these uncertainties. We provide an overview of advanced techniques, including probabilistic methods, ensemble learning, sampling-based approaches, and generative models, while also highlighting hybrid approaches that integrate domain-specific knowledge. Furthermore, we examine the diverse applications of UQ across various fields, emphasizing its impact on decision-making, predictive accuracy, and system robustness. The review also addresses key challenges such as scalability, efficiency, and integration with explainable AI, and outlines future directions for research in this rapidly developing area. Through this comprehensive survey, we aim to provide a deeper understanding of UQ's role in enhancing the reliability, safety, and trustworthiness of AI systems.",
+      "citation_count": 32,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "81abf6b33d5b2c1eae2071e890f5e7b5e5e45231",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2501.03282",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_024",
+      "title": "A Survey on Uncertainty Quantification Methods for Deep Learning",
+      "authors": [
+        "Wenchong He",
+        "Zhe Jiang",
+        "Xiao, Tingsong",
+        "Xu, Zelin",
+        "Li, Yukun"
+      ],
+      "year": 2023,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2302.13425",
+      "url": "https://openalex.org/W4322717065",
+      "abstract": "Deep neural networks (DNNs) have achieved tremendous success in computer vision, natural language processing, and scientific and engineering domains. However, DNNs can make unexpected, incorrect, yet overconfident predictions, leading to serious consequences in high-stakes applications such as autonomous driving, medical diagnosis, and disaster response. Uncertainty quantification (UQ) estimates the confidence of DNN predictions in addition to their accuracy. In recent years, many UQ methods have been developed for DNNs. It is valuable to systematically categorize these methods and compare their strengths and limitations. Existing surveys mostly categorize UQ methodologies by neural network architecture or Bayesian formulation, while overlooking the uncertainty sources each method addresses, making it difficult to select an appropriate approach in practice. To fill this gap, this paper presents a taxonomy of UQ methods for DNNs based on uncertainty sources (e.g., data versus model uncertainty). We summarize the advantages and disadvantages of each category, and illustrate how UQ can be applied to machine learning problems (e.g., active learning, out-of-distribution robustness, and deep reinforcement learning). We also identify future research directions, including UQ for large language models (LLMs), AI-driven scientific simulations, and deep neural networks with structured outputs.",
+      "citation_count": 26,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4322717065",
+      "pubmed_id": null,
+      "arxiv_id": "2302.13425",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_025",
+      "title": "Position: Uncertainty Quantification Needs Reassessment for Large-language Model Agents",
+      "authors": [
+        "Michael Kirchhof",
+        "Gjergji Kasneci",
+        "Enkelejda Kasneci"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2505.22655",
+      "url": "https://www.semanticscholar.org/paper/983e655059b6931636b0be3d78d159b954259881",
+      "abstract": "Large-language models (LLMs) and chatbot agents are known to provide wrong outputs at times, and it was recently found that this can never be fully prevented. Hence, uncertainty quantification plays a crucial role, aiming to quantify the level of ambiguity in either one overall number or two numbers for aleatoric and epistemic uncertainty. This position paper argues that this traditional dichotomy of uncertainties is too limited for the open and interactive setup that LLM agents operate in when communicating with a user, and that we need to research avenues that enrich uncertainties in this novel scenario. We review the literature and find that popular definitions of aleatoric and epistemic uncertainties directly contradict each other and lose their meaning in interactive LLM agent settings. Hence, we propose three novel research directions that focus on uncertainties in such human-computer interactions: Underspecification uncertainties, for when users do not provide all information or define the exact task at the first go, interactive learning, to ask follow-up questions and reduce the uncertainty about the current context, and output uncertainties, to utilize the rich language and speech space to express uncertainties as more than mere numbers. We expect that these new ways of dealing with and communicating uncertainties will lead to LLM agent interactions that are more transparent, trustworthy, and intuitive.",
+      "citation_count": 24,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "983e655059b6931636b0be3d78d159b954259881",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2505.22655",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_026",
+      "title": "Revisiting Epistemic Markers in Confidence Estimation: Can Markers Accurately Reflect Large Language Models' Uncertainty?",
+      "authors": [
+        "Jiayu Liu",
+        "Qing Zong",
+        "Weiqi Wang",
+        "Yangqiu Song"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2505.24778",
+      "url": "https://www.semanticscholar.org/paper/7b07459092a953165e634629383ab4db2aeaa8cc",
+      "abstract": "As large language models (LLMs) are increasingly used in high-stakes domains, accurately assessing their confidence is crucial. Humans typically express confidence through epistemic markers (e.g., \"fairly confident\") instead of numerical values. However, it remains unclear whether LLMs consistently use these markers to reflect their intrinsic confidence due to the difficulty of quantifying uncertainty associated with various markers. To address this gap, we first define marker confidence as the observed accuracy when a model employs an epistemic marker. We evaluate its stability across multiple question-answering datasets in both in-distribution and out-of-distribution settings for open-source and proprietary LLMs. Our results show that while markers generalize well within the same distribution, their confidence is inconsistent in out-of-distribution scenarios. These findings raise significant concerns about the reliability of epistemic markers for confidence estimation, underscoring the need for improved alignment between marker based confidence and actual model uncertainty. Our code is available at https://github.com/HKUST-KnowComp/MarConf.",
+      "citation_count": 15,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "7b07459092a953165e634629383ab4db2aeaa8cc",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2505.24778",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_027",
+      "title": "From Calibration to Collaboration: LLM Uncertainty Quantification Should Be More Human-Centered",
+      "authors": [
+        "Siddartha Devic",
+        "Tejas Srinivasan",
+        "Jesse Thomason",
+        "Willie Neiswanger",
+        "V. Sharan"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2506.07461",
+      "url": "https://www.semanticscholar.org/paper/c6f2d5389a6f0d2949991924b59c3151509181db",
+      "abstract": "Large Language Models (LLMs) are increasingly assisting users in the real world, yet their reliability remains a concern. Uncertainty quantification (UQ) has been heralded as a tool to enhance human-LLM collaboration by enabling users to know when to trust LLM predictions. We argue that current practices for uncertainty quantification in LLMs are not optimal for developing useful UQ for human users making decisions in real-world tasks. Through an analysis of 40 LLM UQ methods, we identify three prevalent practices hindering the community's progress toward its goal of benefiting downstream users: 1) evaluating on benchmarks with low ecological validity; 2) considering only epistemic uncertainty; and 3) optimizing metrics that are not necessarily indicative of downstream utility. For each issue, we propose concrete user-centric practices and research directions that LLM UQ researchers should consider. Instead of hill-climbing on unrepresentative tasks using imperfect metrics, we argue that the community should adopt a more human-centered approach to LLM uncertainty quantification.",
+      "citation_count": 14,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "c6f2d5389a6f0d2949991924b59c3151509181db",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2506.07461",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_028",
+      "title": "Enhancing Vision-Language Model Reliability with Uncertainty-Guided Dropout Decoding",
+      "authors": [
+        "Yi Fang",
+        "Ziran Yang",
+        "Zhaorun Chen",
+        "Zhuokai Zhao",
+        "Jiawei Zhou"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": null,
+      "url": "https://www.semanticscholar.org/paper/7afc94b223e0cd10db4ae00e0903d1958857e59c",
+      "abstract": "Large vision-language models (LVLMs) excel at multimodal tasks but are prone to misinterpreting visual inputs, often resulting in hallucinations and unreliable outputs. We present DROPOUT DECODING, a novel inference-time approach that quantifies the uncertainty of visual tokens and selectively masks uncertain tokens to improve decoding. Our method measures the uncertainty of each visual token by projecting it onto the text space and decomposing it into aleatoric and epistemic components. Specifically, we focus on epistemic uncertainty, which captures perception-related errors more effectively. Inspired by dropout regularization, we introduce uncertainty-guided token dropout, which applies the dropout principle to input visual tokens instead of model parameters, and during inference rather than training. By aggregating predictions from an ensemble of masked decoding contexts, we can robustly mitigate errors arising from visual token misinterpretations. Evaluations on benchmarks including CHAIR, THRONE, and MMBench demonstrate that DROPOUT DECODING significantly reduces object hallucinations (OH) and enhances both reliability and quality of LVLM outputs across diverse visual contexts. Code is released at https://github.com/kigb/DropoutDecoding.",
+      "citation_count": 13,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "7afc94b223e0cd10db4ae00e0903d1958857e59c",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2412.06474",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_029",
+      "title": "Evidence, my Dear Watson: Abstractive dialogue summarization on learnable relevant utterances",
+      "authors": [
+        "Paolo Italiani",
+        "Giacomo Frisoni",
+        "Gianluca Moro",
+        "Antonella Carbonaro",
+        "Claudio Sartori"
+      ],
+      "year": 2023,
+      "journal": "Neurocomputing",
+      "doi": "10.1016/j.neucom.2023.127132",
+      "url": "https://openalex.org/W4389819521",
+      "abstract": "Abstractive dialogue summarization requires distilling and rephrasing key information from noisy multi-speaker documents. Combining pre-trained language models with input augmentation techniques has recently led to significant research progress. However, existing solutions still struggle to select relevant chat segments, primarily relying on open-domain and unsupervised annotators not tailored to the actual needs of the summarization task. In this paper, we propose DearWatson, a task-aware utterance-level annotation framework for improving the effectiveness and interpretability of pre-trained dialogue summarization models. Precisely, we learn relevant utterances in the source document and mark them with special tags, that then act as supporting evidence for the generated summary. Quantitative experiments are conducted on two datasets made up of real-life messenger conversations. The results show that DearWatson allows model attention to focus on salient tokens, achieving new state-of-the-art results in three evaluation metrics, including semantic and factuality measures. Human evaluation proves the superiority of our solution in semantic consistency and recall. Finally, extensive ablation studies confirm each module’s importance, also exploring different annotation strategies and parameter-efficient fine-tuning of large generative language models.",
+      "citation_count": 11,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4389819521",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "consistency_sampling"
+      }
+    },
+    {
+      "id": "paper_030",
+      "title": "Know Your Limits: A Survey of Abstention in Large Language Models",
+      "authors": [
+        "Bingbing Wen",
+        "Jihan Yao",
+        "Shangbin Feng",
+        "Chenjun Xu",
+        "Yulia Tsvetkov",
+        "Bill Howe",
+        "Lucy Lu Wang"
+      ],
+      "year": 2025,
+      "journal": "Transactions of the Association for Computational Linguistics",
+      "doi": "10.1162/tacl_a_00754",
+      "url": "https://openalex.org/W4411934268",
+      "abstract": "Abstract Abstention, the refusal of large language models (LLMs) to provide an answer, is increasingly recognized for its potential to mitigate hallucinations and enhance safety in LLM systems. In this survey, we introduce a framework to examine abstention from three perspectives: the query, the model, and human values. We organize the literature on abstention methods, benchmarks, and evaluation metrics using this framework, and discuss merits and limitations of prior work. We further identify and motivate areas for future research, such as whether abstention can be achieved as a meta-capability that transcends specific tasks or domains, and opportunities to optimize abstention abilities in specific contexts. In doing so, we aim to broaden the scope and impact of abstention methodologies in AI systems.1",
+      "citation_count": 11,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4411934268",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_001",
+        "paper_007",
+        "paper_017"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 3,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_031",
+      "title": "Shifting Attention to Relevance: Towards the Predictive Uncertainty Quantification of Free-Form Large Language Models",
+      "authors": [
+        "Jinhao Duan",
+        "Hao Cheng",
+        "Shiqi Wang",
+        "Alex Zavalny",
+        "Chenan Wang",
+        "Renjing Xu",
+        "Bhavya Kailkhura",
+        "Kaidi Xu"
+      ],
+      "year": 2023,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2307.01379",
+      "url": "https://openalex.org/W4383468784",
+      "abstract": "Large Language Models (LLMs) show promising results in language generation and instruction following but frequently \"hallucinate\", making their outputs less reliable. Despite Uncertainty Quantification's (UQ) potential solutions, implementing it accurately within LLMs is challenging. Our research introduces a simple heuristic: not all tokens in auto-regressive LLM text equally represent the underlying meaning, as \"linguistic redundancy\" often allows a few keywords to convey the essence of long sentences. However, current methods underestimate this inequality when assessing uncertainty, causing tokens with limited semantics to be equally or excessively weighted in UQ. To correct this, we propose Shifting Attention to more Relevant (SAR) components at both token- and sentence-levels for better UQ. We conduct extensive experiments involving a range of popular \"off-the-shelf\" LLMs, such as Vicuna, WizardLM, and LLaMA-2-chat, with model sizes extending up to 33B parameters. We evaluate various free-form question-answering tasks, encompassing domains such as reading comprehension, science Q&amp;A, and medical Q&amp;A. Our experimental results, coupled with a comprehensive demographic analysis, demonstrate the superior performance of SAR. The code is available at https://github.com/jinhaoduan/SAR.",
+      "citation_count": 10,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4383468784",
+      "pubmed_id": null,
+      "arxiv_id": "2307.01379",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "attention_internal_signals"
+      }
+    },
+    {
+      "id": "paper_032",
+      "title": "COIN: Uncertainty-Guarding Selective Question Answering for Foundation Models with Provable Risk Guarantees",
+      "authors": [
+        "Zhiyuan Wang",
+        "Jinhao Duan",
+        "Qingni Wang",
+        "Xiaofeng Zhu",
+        "Tianlong Chen",
+        "Xiaoshuang Shi",
+        "Kaidi Xu"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2506.20178",
+      "url": "https://www.semanticscholar.org/paper/5edb26702f3d19a7fa35163147a74b084419882a",
+      "abstract": "Uncertainty quantification (UQ) for foundation models is essential to identify and mitigate potential hallucinations in automatically generated text. However, heuristic UQ approaches lack formal guarantees for key metrics such as the false discovery rate (FDR) in selective prediction. Previous work adopts the split conformal prediction (SCP) framework to ensure desired coverage of admissible answers by constructing prediction sets, but these sets often contain incorrect candidates, limiting their practical utility. To address this, we propose COIN, an uncertainty-guarding selection framework that calibrates statistically valid thresholds to filter a single generated answer per question under user-specified FDR constraints. COIN estimates the empirical error rate on a calibration set and applies confidence interval methods such as Clopper-Pearson to establish a high-probability upper bound on the true error rate (i.e., FDR). This enables the selection of the largest uncertainty threshold that ensures FDR control on test data while significantly increasing sample retention. We demonstrate COIN's robustness in risk control, strong test-time power in retaining admissible answers, and predictive efficiency under limited calibration data across both general and multimodal text generation tasks. Furthermore, we show that employing alternative upper bound constructions and UQ strategies can further boost COIN's power performance, which underscores its extensibility and adaptability to diverse application scenarios.",
+      "citation_count": 10,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "5edb26702f3d19a7fa35163147a74b084419882a",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2506.20178",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_033",
+      "title": "Logit-Based Ensemble Distribution Distillation for Robust Autoregressive Sequence Uncertainties",
+      "authors": [
+        "Yassir Fathullah",
+        "Guoxuan Xia",
+        "M. Gales"
+      ],
+      "year": 2023,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2305.10384",
+      "url": "https://www.semanticscholar.org/paper/febf10dc1bff691005e837383c33be78530783f5",
+      "abstract": "Efficiently and reliably estimating uncertainty is an important objective in deep learning. It is especially pertinent to autoregressive sequence tasks, where training and inference costs are typically very high. However, existing research has predominantly focused on tasks with static data such as image classification. In this work, we investigate Ensemble Distribution Distillation (EDD) applied to large-scale natural language sequence-to-sequence data. EDD aims to compress the superior uncertainty performance of an expensive (teacher) ensemble into a cheaper (student) single model. Importantly, the ability to separate knowledge (epistemic) and data (aleatoric) uncertainty is retained. Existing probability-space approaches to EDD, however, are difficult to scale to large vocabularies. We show, for modern transformer architectures on large-scale translation tasks, that modelling the ensemble logits, instead of softmax probabilities, leads to significantly better students. Moreover, the students surprisingly even outperform Deep Ensembles by up to ~10% AUROC on out-of-distribution detection, whilst matching them at in-distribution translation.",
+      "citation_count": 8,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "febf10dc1bff691005e837383c33be78530783f5",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2305.10384",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_034",
+      "title": "Confidence Under the Hood: An Investigation into the Confidence-Probability Alignment in Large Language Models",
+      "authors": [
+        "Abhishek Kumar",
+        "Robert Morabito",
+        "Sanzhar Umbet",
+        "Jad Kabbara",
+        "Ali Emami"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": "10.18653/v1/2024.acl-long.20",
+      "url": "https://openalex.org/W4402667062",
+      "abstract": "As the use of Large Language Models (LLMs) becomes more widespread, understanding their self-evaluation of confidence in generated responses becomes increasingly important as it is integral to the reliability of the output of these models.We introduce the concept of Confidence-Probability Alignment, that connects an LLM's internal confidence, quantified by token probabilities, to the confidence conveyed in the model's response when explicitly asked about its certainty.Using various datasets and prompting techniques that encourage model introspection, we probe the alignment between models' internal and expressed confidence.These techniques encompass using structured evaluation scales to rate confidence, including answer options when prompting, and eliciting the model's confidence level for outputs it does not recognize as its own.Notably, among the models analyzed, OpenAI's GPT-4 showed the strongest confidence-probability alignment, with an average Spearman's of 0.42, across a wide range of tasks.Our work contributes to the ongoing efforts to facilitate risk assessment in the application of LLMs and to further our understanding of model trustworthiness. 1",
+      "citation_count": 8,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4402667062",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_035",
+      "title": "Uncertainty in Language Models: Assessment through Rank-Calibration",
+      "authors": [
+        "Xinmeng Huang",
+        "Shuo Li",
+        "Mengxin Yu",
+        "Matteo Sesia",
+        "Hamed Hassani",
+        "Insup Lee",
+        "Osbert Bastani",
+        "Edgar Dobriban"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": "10.18653/v1/2024.emnlp-main.18",
+      "url": "https://openalex.org/W4404783656",
+      "abstract": "Xinmeng Huang, Shuo Li, Mengxin Yu, Matteo Sesia, Hamed Hassani, Insup Lee, Osbert Bastani, Edgar Dobriban. Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing. 2024.",
+      "citation_count": 8,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4404783656",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [
+        "paper_037"
+      ],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_036",
+      "title": "Bayesian Prompt Ensembles: Model Uncertainty Estimation for Black-Box Large Language Models",
+      "authors": [
+        "Francesco Tonolini",
+        "Νικόλαος Αλέτρας",
+        "Jordan Massiah",
+        "Gabriella Kazai"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": "10.18653/v1/2024.findings-acl.728",
+      "url": "https://openalex.org/W4402670050",
+      "abstract": "An important requirement for the reliable deployment of pre-trained large language models (LLMs) is the well-calibrated quantification of the uncertainty in their outputs.While the likelihood of predicting the next token is a practical surrogate of the data uncertainty learned during training, model uncertainty is challenging to estimate, i.e., due to lack of knowledge acquired during training.Prior efforts to quantify uncertainty of neural networks require specific architectures or (re-)training strategies, which are impractical to apply to LLMs with several billion parameters, or for black-box models where the architecture and parameters are not available.In this paper, we propose Bayesian Prompts Ensembles (BayesPE), a novel approach to effectively obtain wellcalibrated uncertainty for the output of pretrained LLMs.BayesPE computes output probabilities through a weighted ensemble of different, but semantically equivalent, task instruction prompts.The relative weights of the different prompts in the ensemble are estimated through approximate Bayesian variational inference over a small labeled validation set.We demonstrate that BayesPE approximates a Bayesian input layer for the LLM, providing a lower bound on the expected model error.In our extensive experiments, we show that BayesPE achieves significantly superior uncertainty calibration compared to several baselines over a range of natural language classification tasks, both in zero-and few-shot settings.Validation Samples",
+      "citation_count": 6,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4402670050",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_037",
+      "title": "Uncertainty quantification in large language models through convex hull analysis",
+      "authors": [
+        "Ferhat Özgür Çatak",
+        "Murat Kuzlu"
+      ],
+      "year": 2024,
+      "journal": "Discover Artificial Intelligence",
+      "doi": "10.1007/s44163-024-00200-w",
+      "url": "https://openalex.org/W4404691742",
+      "abstract": "Uncertainty quantification approaches have been more critical in large language models (LLMs), particularly high-risk applications requiring reliable outputs. However, traditional methods for uncertainty quantification, such as probabilistic models and ensemble techniques, face challenges when applied to the complex and high-dimensional nature of LLM-generated outputs. This study proposes a novel geometric approach to uncertainty quantification using convex hull analysis. The proposed method leverages the spatial properties of response embeddings to measure the dispersion and variability of model outputs. The prompts are categorized into three types, i.e., ’easy’, ’moderate’, and ’confusing’, to generate multiple responses using different LLMs at varying temperature settings. The responses are transformed into high-dimensional embeddings via a BERT model and subsequently projected into a two-dimensional space using Principal Component Analysis (PCA), Isomap, Multidimensional Scaling (MDS). The Density-Based Spatial Clustering of Applications with Noise (DBSCAN) algorithm is utilized to cluster the embeddings and compute the convex hull for each selected cluster. The experimental results indicate that the uncertainty of the model for LLMs depends on the prompt complexity, the model, and the temperature setting.",
+      "citation_count": 6,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4404691742",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_035"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 1,
+        "is_hub": false,
+        "cluster": "retrieval_agentic"
+      }
+    },
+    {
+      "id": "paper_038",
+      "title": "A Survey of Uncertainty Estimation Methods on Large Language Models",
+      "authors": [
+        "Zhiqiu Xia",
+        "Jinxuan Xu",
+        "Yuqian Zhang",
+        "Hang Liu"
+      ],
+      "year": 2025,
+      "journal": null,
+      "doi": "10.18653/v1/2025.findings-acl.1101",
+      "url": "https://openalex.org/W4412887878",
+      "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities across various tasks.However, these models could offer biased, hallucinated, or non-factual responses camouflaged by their fluency and realistic appearance.Uncertainty estimation is the key method to address this challenge.While research efforts in uncertainty estimation are ramping up, there is a lack of comprehensive and dedicated surveys on LLM uncertainty estimation.This survey presents four major avenues of LLM uncertainty estimation.Furthermore, we perform extensive experimental evaluations across multiple methods and datasets.At last, we provide critical and promising future directions for LLM uncertainty estimation.",
+      "citation_count": 6,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4412887878",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q2",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "survey_position"
+      }
+    },
+    {
+      "id": "paper_039",
+      "title": "Monte Carlo Temperature: a robust sampling strategy for LLM's uncertainty quantification methods",
+      "authors": [
+        "Nicola Cecere",
+        "Andrea Bacciu",
+        "Ignacio Fernández-Tobías",
+        "Amin Mantrach"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2502.18389",
+      "url": "https://www.semanticscholar.org/paper/2d8169eb07620e13134f59946d80970dc7568330",
+      "abstract": "Uncertainty quantification (UQ) in Large Language Models (LLMs) is essential for their safe and reliable deployment, particularly in critical applications where incorrect outputs can have serious consequences. Current UQ methods typically rely on querying the model multiple times using non-zero temperature sampling to generate diverse outputs for uncertainty estimation. However, the impact of selecting a given temperature parameter is understudied, and our analysis reveals that temperature plays a fundamental role in the quality of uncertainty estimates. The conventional approach of identifying optimal temperature values requires expensive hyperparameter optimization (HPO) that must be repeated for each new model-dataset combination. We propose Monte Carlo Temperature (MCT), a robust sampling strategy that eliminates the need for temperature calibration. Our analysis reveals that: 1) MCT provides more robust uncertainty estimates across a wide range of temperatures, 2) MCT improves the performance of UQ methods by replacing fixed-temperature strategies that do not rely on HPO, and 3) MCT achieves statistical parity with oracle temperatures, which represent the ideal outcome of a well-tuned but computationally expensive HPO process. These findings demonstrate that effective UQ can be achieved without the computational burden of temperature parameter calibration.",
+      "citation_count": 6,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "2d8169eb07620e13134f59946d80970dc7568330",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2502.18389",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_040",
+      "title": "Just Ask for Calibration: Strategies for Eliciting Calibrated Confidence Scores from Language Models Fine-Tuned with Human Feedback",
+      "authors": [
+        "Katherine Tian",
+        "Eric Mitchell",
+        "Allan Zhou",
+        "Archit Sharma",
+        "Rafael Rafailov",
+        "Huaxiu Yao",
+        "Chelsea Finn",
+        "Christopher D. Manning"
+      ],
+      "year": 2023,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2305.14975",
+      "url": "https://openalex.org/W4378513156",
+      "abstract": "A trustworthy real-world prediction system should produce well-calibrated confidence scores; that is, its confidence in an answer should be indicative of the likelihood that the answer is correct, enabling deferral to an expert in cases of low-confidence predictions. Recent studies have shown that unsupervised pre-training produces large language models (LMs) whose conditional probabilities are remarkably well-calibrated. However, the most widely-used LMs are fine-tuned with reinforcement learning from human feedback (RLHF-LMs), and some studies have suggested that RLHF-LMs produce conditional probabilities that are very poorly calibrated. In light of this perceived weakness, we conduct a broad evaluation of methods for extracting confidence scores from RLHF-LMs. For RLHF-LMs such as ChatGPT, GPT-4, and Claude, we find that verbalized confidences emitted as output tokens are typically better-calibrated than the model's conditional probabilities on the TriviaQA, SciQ, and TruthfulQA benchmarks, often reducing the expected calibration error by a relative 50%.",
+      "citation_count": 5,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4378513156",
+      "pubmed_id": null,
+      "arxiv_id": "2305.14975",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_041",
+      "title": "Simple Yet Effective: An Information-Theoretic Approach to Multi-LLM Uncertainty Quantification",
+      "authors": [
+        "Maya Kruse",
+        "Majid Afshar",
+        "Saksham Khatwani",
+        "A. Mayampurath",
+        "Guanhua Chen",
+        "Yanjun Gao"
+      ],
+      "year": 2025,
+      "journal": "Proceedings of the Conference on Empirical Methods in Natural Language Processing. Conference on Empirical Methods in Natural Language Processing",
+      "doi": "10.18653/v1/2025.emnlp-main.1551",
+      "url": "https://www.semanticscholar.org/paper/6c5fe72287cd3482cc12ab0acf392ad620ff0c0d",
+      "abstract": "Large language models (LLMs) often behave inconsistently across inputs, indicating uncertainty and motivating the need for its quantification in high-stakes settings. Prior work on calibration and uncertainty quantification often focuses on individual models, overlooking the potential of model diversity. We hypothesize that LLMs make complementary predictions due to differences in training and the Zipfian nature of language, and that aggregating their outputs leads to more reliable uncertainty estimates. To leverage this, we propose MUSE (Multi-LLM Uncertainty via Subset Ensembles), a simple information-theoretic method that uses Jensen-Shannon Divergence to identify and aggregate well-calibrated subsets of LLMs. Experiments on binary prediction tasks demonstrate improved calibration and predictive performance compared to single-model and naïve ensemble baselines. In addition, we explore using MUSE as guided signals with chain-of-thought distillation to fine-tune LLMs for calibration. MUSE is available at:https://github.com/LARK-NLP-Lab/MUSE.",
+      "citation_count": 5,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "6c5fe72287cd3482cc12ab0acf392ad620ff0c0d",
+      "openalex_id": null,
+      "pubmed_id": "41399801",
+      "arxiv_id": "2507.07236",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_042",
+      "title": "OpenFactCheck: A Unified Framework for Factuality Evaluation of LLMs",
+      "authors": [
+        "Hasan Iqbal",
+        "Yuxia Wang",
+        "Minghan Wang",
+        "Georgi P. Georgiev",
+        "Jiahui Geng",
+        "Iryna Gurevych",
+        "Preslav Nakov"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": "10.18653/v1/2024.emnlp-demo.23",
+      "url": "https://openalex.org/W4404784015",
+      "abstract": "Hasan Iqbal, Yuxia Wang, Minghan Wang, Georgi Nenkov Georgiev, Jiahui Geng, Iryna Gurevych, Preslav Nakov. Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: System Demonstrations. 2024.",
+      "citation_count": 4,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4404784015",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_043",
+      "title": "A Systematic Literature Review of Retrieval-Augmented Generation: Techniques, Metrics, and Challenges",
+      "authors": [
+        "Andrew Brown",
+        "Muhammad Roman",
+        "Barry Devereux"
+      ],
+      "year": 2025,
+      "journal": "Big Data and Cognitive Computing",
+      "doi": "10.3390/bdcc9120320",
+      "url": "https://openalex.org/W7114889968",
+      "abstract": "Background: Retrieval-augmented generation (RAG) aims to reduce hallucinations and outdated knowledge by grounding LLM outputs in retrieved evidence, but empirical results are scattered across tasks, systems, and metrics, limiting cumulative insight. Objective: We aimed to synthesise empirical evidence on RAG effectiveness versus parametric-only baselines, map datasets/architectures/evaluation practices, and surface limitations and research gaps. Methods: This systematic review was conducted and reported in accordance with PRISMA 2020. We searched the ACM Digital Library, IEEE Xplore, Scopus, ScienceDirect, and DBLP; all sources were last searched on 13 May 2025. This included studies from January 2020–May 2025 that addressed RAG or similar retrieval-supported systems producing text output, met citation thresholds (≥15 for 2025; ≥30 for 2024 or earlier), and offered original contributions; excluded non-English items, irrelevant works, duplicates, and records without accessible full text. Bias was appraised with a brief checklist; screening used one reviewer with an independent check and discussion. LLM suggestions were advisory only; 2025 citation thresholds were adjusted to limit citation-lag. We used a descriptive approach to synthesise the results, organising studies by themes aligned to RQ1–RQ4 and reporting summary counts/frequencies; no meta-analysis was undertaken due to heterogeneity of designs and metrics. Results: We included 128 studies spanning knowledge-intensive tasks (35/128; 27.3%), open-domain QA (20/128; 15.6%), software engineering (13/128; 10.2%), and medical domains (11/128; 8.6%). Methods have shifted from DPR + seq2seq baselines to modular, policy-driven RAG with hybrid/structure-aware retrieval, uncertainty-triggered loops, memory, and emerging multimodality. Evaluation remains overlap-heavy (EM/F1), with increasing use of retrieval diagnostics (e.g., Recall@k, MRR@k), human judgements, and LLM-as-judge protocols. Efficiency and security (poisoning, leakage, jailbreaks) are growing concerns. Discussion: Evidence supports a shift to modular, policy-driven RAG, combining hybrid/structure-aware retrieval, uncertainty-aware control, memory, and multimodality, to improve grounding and efficiency. To advance from prototypes to dependable systems, we recommend: (i) holistic benchmarks pairing quality with cost/latency and safety, (ii) budget-aware retrieval/tool-use policies, and (iii) provenance-aware pipelines that expose uncertainty and deliver traceable evidence. We note the evidence base may be affected by citation-lag from the inclusion thresholds and by English-only, five-library coverage. Funding: Advanced Research and Engineering Centre. Registration: Not registered.",
+      "citation_count": 3,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7114889968",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "retrieval_agentic"
+      }
+    },
+    {
+      "id": "paper_044",
+      "title": "Calibrated Decomposition of Aleatoric and Epistemic Uncertainty in Deep Features for Inference-Time Adaptation",
+      "authors": [
+        "Divake Kumar",
+        "Patrick Poggi",
+        "Sina Tayebati",
+        "Devashri Naik",
+        "Nilesh A. Ahuja",
+        "A. R. Trivedi"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2511.12389",
+      "url": "https://www.semanticscholar.org/paper/8e2296e630f4348e6c2dd87f208d99e69c274bea",
+      "abstract": "Most estimators collapse all uncertainty modes into a single confidence score, preventing reliable reasoning about when to allocate more compute or adjust inference. We introduce Uncertainty-Guided Inference-Time Selection, a lightweight inference time framework that disentangles aleatoric (data-driven) and epistemic (model-driven) uncertainty directly in deep feature space. Aleatoric uncertainty is estimated using a regularized global density model, while epistemic uncertainty is formed from three complementary components that capture local support deficiency, manifold spectral collapse, and cross-layer feature inconsistency. These components are empirically orthogonal and require no sampling, no ensembling, and no additional forward passes. We integrate the decomposed uncertainty into a distribution free conformal calibration procedure that yields significantly tighter prediction intervals at matched coverage. Using these components for uncertainty guided adaptive model selection reduces compute by approximately 60 percent on MOT17 with negligible accuracy loss, enabling practical self regulating visual inference. Additionally, our ablation results show that the proposed orthogonal uncertainty decomposition consistently yields higher computational savings across all MOT17 sequences, improving margins by 13.6 percentage points over the total-uncertainty baseline.",
+      "citation_count": 3,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "8e2296e630f4348e6c2dd87f208d99e69c274bea",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2511.12389",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_045",
+      "title": "A Survey of Confidence Estimation and Calibration in Large Language Models",
+      "authors": [
+        "Jiahui Geng",
+        "Fengyu Cai",
+        "Yuxia Wang",
+        "Heinz Koeppl",
+        "Preslav Nakov",
+        "Iryna Gurevych"
+      ],
+      "year": 2023,
+      "journal": "arXiv (Cornell University)",
+      "doi": "10.48550/arxiv.2311.08298",
+      "url": "https://openalex.org/W4388717366",
+      "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities across a wide range of tasks in various domains. Despite their impressive performance, they can be unreliable due to factual errors in their generations. Assessing their confidence and calibrating them across different tasks can help mitigate risks and enable LLMs to produce better generations. There has been a lot of recent research aiming to address this, but there has been no comprehensive overview to organize it and outline the main lessons learned. The present survey aims to bridge this gap. In particular, we outline the challenges and we summarize recent technical advancements for LLM confidence estimation and calibration. We further discuss their applications and suggest promising directions for future work.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4388717366",
+      "pubmed_id": null,
+      "arxiv_id": "2311.08298",
+      "references": [],
+      "cited_by": [
+        "paper_013"
+      ],
+      "is_seed_paper": true,
+      "is_user_seed": true,
+      "found_via": "seed",
+      "citation_network": {
+        "in_degree": 1,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_046",
+      "title": "Benchmarking Large Language Model Uncertainty for Prompt Optimization",
+      "authors": [
+        "Pei-Fu Guo",
+        "Yun-Da Tsai",
+        "Shou-De Lin"
+      ],
+      "year": 2024,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2409.10044",
+      "url": "https://www.semanticscholar.org/paper/5e88eb9a01cef5f85f67325ad730f297885a7402",
+      "abstract": "Prompt optimization algorithms for Large Language Models (LLMs) excel in multi-step reasoning but still lack effective uncertainty estimation. This paper introduces a benchmark dataset to evaluate uncertainty metrics, focusing on Answer, Correctness, Aleatoric, and Epistemic Uncertainty. Through analysis of models like GPT-3.5-Turbo and Meta-Llama-3.1-8B-Instruct, we show that current metrics align more with Answer Uncertainty, which reflects output confidence and diversity, rather than Correctness Uncertainty, highlighting the need for improved metrics that are optimization-objective-aware to better guide prompt optimization. Our code and dataset are available at https://github.com/0Frett/PO-Uncertainty-Benchmarking.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "5e88eb9a01cef5f85f67325ad730f297885a7402",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2409.10044",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_047",
+      "title": "An Information-Theoretic Perspective on Multi-LLM Uncertainty Estimation",
+      "authors": [
+        "Maya Kruse",
+        "Majid Afshar",
+        "Saksham Khatwani",
+        "A. Mayampurath",
+        "Guanhua Chen",
+        "Yanjun Gao"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.1101/2025.07.09.25331207",
+      "url": "https://www.semanticscholar.org/paper/36bcd9a7b620b601d72c2e8c91f0de9a77bd739f",
+      "abstract": null,
+      "citation_count": 2,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "36bcd9a7b620b601d72c2e8c91f0de9a77bd739f",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "general_uq"
+      }
+    },
+    {
+      "id": "paper_048",
+      "title": "HybridFlow: Quantification of Aleatoric and Epistemic Uncertainty with a Single Hybrid Model",
+      "authors": [
+        "Peter Van Katwyk",
+        "K. Bergen"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2510.05054",
+      "url": "https://www.semanticscholar.org/paper/cad6c550956090e673b87268ae35ccaa9448826d",
+      "abstract": "Uncertainty quantification is critical for ensuring robustness in high-stakes machine learning applications. We introduce HybridFlow, a modular hybrid architecture that unifies the modeling of aleatoric and epistemic uncertainty by combining a Conditional Masked Autoregressive normalizing flow for estimating aleatoric uncertainty with a flexible probabilistic predictor for epistemic uncertainty. The framework supports integration with any probabilistic model class, allowing users to easily adapt HybridFlow to existing architectures without sacrificing predictive performance. HybridFlow improves upon previous uncertainty quantification frameworks across a range of regression tasks, such as depth estimation, a collection of regression benchmarks, and a scientific case study of ice sheet emulation. We also provide empirical results of the quantified uncertainty, showing that the uncertainty quantified by HybridFlow is calibrated and better aligns with model error than existing methods for quantifying aleatoric and epistemic uncertainty. HybridFlow addresses a key challenge in Bayesian deep learning, unifying aleatoric and epistemic uncertainty modeling in a single robust framework.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "cad6c550956090e673b87268ae35ccaa9448826d",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2510.05054",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_049",
+      "title": "Measuring Aleatoric and Epistemic Uncertainty in LLMs: Empirical Evaluation on ID and OOD QA Tasks",
+      "authors": [
+        "K. Wang",
+        "Subre Abdoul Moktar",
+        "Jia Li",
+        "Kangshuo Li",
+        "Feng Chen"
+      ],
+      "year": 2025,
+      "journal": "ArXiv",
+      "doi": "10.48550/arxiv.2511.03166",
+      "url": "https://www.semanticscholar.org/paper/ffc0fd720d2639dcca3bdecbff835049e904b5d2",
+      "abstract": "Large Language Models (LLMs) have become increasingly pervasive, finding applications across many industries and disciplines. Ensuring the trustworthiness of LLM outputs is paramount, where Uncertainty Estimation (UE) plays a key role. In this work, a comprehensive empirical study is conducted to examine the robustness and effectiveness of diverse UE measures regarding aleatoric and epistemic uncertainty in LLMs. It involves twelve different UE methods and four generation quality metrics including LLMScore from LLM criticizers to evaluate the uncertainty of LLM-generated answers in Question-Answering (QA) tasks on both in-distribution (ID) and out-of-distribution (OOD) datasets. Our analysis reveals that information-based methods, which leverage token and sequence probabilities, perform exceptionally well in ID settings due to their alignment with the model's understanding of the data. Conversely, density-based methods and the P(True) metric exhibit superior performance in OOD contexts, highlighting their effectiveness in capturing the model's epistemic uncertainty. Semantic consistency methods, which assess variability in generated answers, show reliable performance across different datasets and generation metrics. These methods generally perform well but may not be optimal for every situation.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "ffc0fd720d2639dcca3bdecbff835049e904b5d2",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2511.03166",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_050",
+      "title": "SConU: Selective Conformal Uncertainty in Large Language Models",
+      "authors": [
+        "Zhiyuan Wang",
+        "Qingni Wang",
+        "Yue Zhang",
+        "Tianlong Chen",
+        "Xiaofeng Zhu",
+        "Xiaoshuang Shi",
+        "Kaidi Xu"
+      ],
+      "year": 2025,
+      "journal": null,
+      "doi": "10.18653/v1/2025.acl-long.934",
+      "url": "https://openalex.org/W4412944930",
+      "abstract": "Zhiyuan Wang, Qingni Wang, Yue Zhang, Tianlong Chen, Xiaofeng Zhu, Xiaoshuang Shi, Kaidi Xu. Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2025.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4412944930",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "general_uq"
+      }
+    },
+    {
+      "id": "paper_051",
+      "title": "UvA-MT at WMT25 Evaluation Task: LLM Uncertainty as a Proxy for Translation Quality",
+      "authors": [
+        "Di Wu",
+        "C. Monz"
+      ],
+      "year": 2025,
+      "journal": "Proceedings of the Tenth Conference on Machine Translation",
+      "doi": "10.18653/v1/2025.wmt-1.72",
+      "url": "https://www.semanticscholar.org/paper/a4eaade035803c0f23685beaaf34c367b6b65872",
+      "abstract": "This year, we focus exclusively on using the uncertainty quantification as a proxy for translation quality. While this has traditionally been regarded as a form of unsupervised quality estimation, such signals have been overlooked in the design of the current metric models—we show their value in the context of LLMs. More specifically, in contrast to conventional unsupervised QE methods, we apply recent calibration technology (Wu et al., 2025b) to adjust translation likelihoods to better align with quality signals, and we use the single resulting model to participate in both the general translation and QE tracks at WMT25. Our offline experiments show some advantages: 1) uncertainty signals extracted from LLMs, like Tower or Gemma-3, provide accurate quality predictions; and 2) calibration technology further improves this QE performance, sometimes even surpassing certain metric models that were trained with human annotations, such as CometKiwi. We therefore argue that uncertainty quantification (confidence), especially from LLMs, can serve as a strong and complementary signal for the metric design, particularly when human-annotated data are lacking. However, we also identify limitations, i.e., its tendency to assign disproportionately higher scores to hypotheses generated by the model itself.",
+      "citation_count": 2,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "a4eaade035803c0f23685beaaf34c367b6b65872",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_052",
+      "title": "Few-shot RUL Prediction with A Hypernetwork Structure Incorporating Uncertainty Quantification and Calibration",
+      "authors": [
+        "Ying Wang",
+        "Fangyu Li",
+        "Di Wang"
+      ],
+      "year": 2024,
+      "journal": "2024 IEEE 20th International Conference on Automation Science and Engineering (CASE)",
+      "doi": "10.1109/case59546.2024.10711778",
+      "url": "https://www.semanticscholar.org/paper/452accdc0e1e10d689fce41ca7c550af2a52839b",
+      "abstract": "Deep learning (DL) has emerged as a powerful tool for predicting the remaining useful lifetime (RUL) of components and systems. However, there are two challenges. First, DL-based methods require a sufficient number of labelled samples, while the number of run-to-failure units in practical is often small due to the high cost and time-consuming life test. Second, it is desirable to provide the prediction uncertainty of RUL for maintenance decision-making. To tackle above issues, we propose a novel few-shot RUL prediction model with a hypernetwork structure incorporating uncertainty quantification and calibration (Hyper-UC). The proposed Hyper-UC uses a shared feature embedding network and a unit-specific weight to model the mapping from sensor signals to RUL, and a generative network is designed to learn the meta-knowledge of generating distributions over the unit-specific weights. To accurately provide the predictive uncertainty, the Hyper-UC systematically models two types of uncertainty: epistemic uncertainty and aleatoric uncertainty. In the online phase, the unit-specific weights of in-service units are obtained through calibration, and subsequently the predictive distribution of the RUL can be obtained. The proposed method is evaluated to have superior model performance than the benchmark methods in a case study using the C-MAPSS dataset.",
+      "citation_count": 1,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "452accdc0e1e10d689fce41ca7c550af2a52839b",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_053",
+      "title": "InternalInspector I2: Robust Confidence Estimation in LLMs through Internal States",
+      "authors": [
+        "Mohammad Beigi",
+        "Ying Shen",
+        "Runing Yang",
+        "Zihao Lin",
+        "Qifan Wang",
+        "Ankith Mohan",
+        "Jianfeng He",
+        "Ming Jin",
+        "Chang‐Tien Lu",
+        "Lifu Huang"
+      ],
+      "year": 2024,
+      "journal": null,
+      "doi": "10.18653/v1/2024.findings-emnlp.751",
+      "url": "https://openalex.org/W4404781241",
+      "abstract": "Mohammad Beigi, Ying Shen, Runing Yang, Zihao Lin, Qifan Wang, Ankith Mohan, Jianfeng He, Ming Jin, Chang-Tien Lu, Lifu Huang. Findings of the Association for Computational Linguistics: EMNLP 2024. 2024.",
+      "citation_count": 1,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4404781241",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "attention_internal_signals"
+      }
+    },
+    {
+      "id": "paper_054",
+      "title": "Can LLMs Detect Their Confabulations? Estimating Reliability in Uncertainty-Aware Language Models",
+      "authors": [
+        "Tianyi Zhou",
+        "Johanne Medina",
+        "S. Chawla"
+      ],
+      "year": 2025,
+      "journal": null,
+      "doi": "10.48550/arxiv.2508.08139",
+      "url": "https://www.semanticscholar.org/paper/07fbcdebc2c2778e5faeeebe6ed53fc04e945be1",
+      "abstract": "Large Language Models (LLMs) are prone to generating fluent but incorrect content, known as confabulation, which poses increasing risks in multi-turn or agentic applications where outputs may be reused as context. In this work, we investigate how in-context information influences model behavior and whether LLMs can identify their unreliable responses. We propose a reliability estimation that leverages token-level uncertainty to guide the aggregation of internal model representations. Specifically, we compute aleatoric and epistemic uncertainty from output logits to identify salient tokens and aggregate their hidden states into compact representations for response-level reliability prediction. Through controlled experiments on open QA benchmarks, we find that correct in-context information improves both answer accuracy and model confidence, while misleading context often induces confidently incorrect responses, revealing a misalignment between uncertainty and correctness. Our probing-based method captures these shifts in model behavior and improves the detection of unreliable outputs across multiple open-source LLMs. These results underscore the limitations of direct uncertainty signals and highlight the potential of uncertainty-guided probing for reliability-aware generation.",
+      "citation_count": 1,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "07fbcdebc2c2778e5faeeebe6ed53fc04e945be1",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2508.08139",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q3",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "attention_internal_signals"
+      }
+    },
+    {
+      "id": "paper_055",
+      "title": "From Illusion to Insight: A Taxonomic Survey of Hallucination Mitigation Techniques in LLMs",
+      "authors": [
+        "Ioannis Kazlaris",
+        "Efstathios Antoniou",
+        "Konstantinos Diamantaras",
+        "Charalampos Bratsas"
+      ],
+      "year": 2025,
+      "journal": "AI",
+      "doi": "10.3390/ai6100260",
+      "url": "https://openalex.org/W4414799483",
+      "abstract": "Large Language Models (LLMs) exhibit remarkable generative capabilities but remain vulnerable to hallucinations—outputs that are fluent yet inaccurate, ungrounded, or inconsistent with source material. To address the lack of methodologically grounded surveys, this paper introduces a novel method-oriented taxonomy of hallucination mitigation strategies in text-based LLMs. The taxonomy organizes over 300 studies into six principled categories: Training and Learning Approaches, Architectural Modifications, Input/Prompt Optimization, Post-Generation Quality Control, Interpretability and Diagnostic Methods, and Agent-Based Orchestration. Beyond mapping the field, we identify persistent challenges such as the absence of standardized evaluation benchmarks, attribution difficulties in multi-method systems, and the fragility of retrieval-based methods when sources are noisy or outdated. We also highlight emerging directions, including knowledge-grounded fine-tuning and hybrid retrieval–generation pipelines integrated with self-reflective reasoning agents. This taxonomy provides a methodological framework for advancing reliable, context-sensitive LLM deployment in high-stakes domains such as healthcare, law, and defense.",
+      "citation_count": 1,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4414799483",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [
+        "paper_004",
+        "paper_009"
+      ],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 2,
+        "is_hub": false,
+        "cluster": "retrieval_agentic"
+      }
+    },
+    {
+      "id": "paper_056",
+      "title": "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+      "authors": [
+        "Artem Vazhentsev",
+        "Lyudmila Rvanova",
+        "Ivan Lazichny",
+        "Alexander Panchenko",
+        "Maxim S. Panov",
+        "Timothy Baldwin",
+        "Artem Shelmanov"
+      ],
+      "year": 2025,
+      "journal": null,
+      "doi": "10.18653/v1/2025.naacl-long.113",
+      "url": "https://openalex.org/W4411119523",
+      "abstract": "Artem Vazhentsev, Lyudmila Rvanova, Ivan Lazichny, Alexander Panchenko, Maxim Panov, Timothy Baldwin, Artem Shelmanov. Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers). 2025.",
+      "citation_count": 1,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4411119523",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_057",
+      "title": "Can LLMs Predict Their Own Failures? Self-Awareness via Internal Circuits",
+      "authors": [
+        "Amirhosein Ghasemabadi",
+        "Di Niu"
+      ],
+      "year": 2025,
+      "journal": "ArXiv.org",
+      "doi": null,
+      "url": "https://openalex.org/W7117277568",
+      "abstract": "Large language models (LLMs) generate fluent and complex outputs but often fail to recognize their own mistakes and hallucinations. Existing approaches typically rely on external judges, multi-sample consistency, or text-based self-critique, which incur additional compute or correlate weakly with true correctness. We ask: can LLMs predict their own failures by inspecting internal states during inference? We introduce Gnosis, a lightweight self-awareness mechanism that enables frozen LLMs to perform intrinsic self-verification by decoding signals from hidden states and attention patterns. Gnosis passively observes internal traces, compresses them into fixed-budget descriptors, and predicts correctness with negligible inference cost, adding only ~5M parameters and operating independently of sequence length. Across math reasoning, open-domain question answering, and academic knowledge benchmarks, and over frozen backbones ranging from 1.7B to 20B parameters, Gnosis consistently outperforms strong internal baselines and large external judges in both accuracy and calibration. Moreover, it generalizes zero-shot to partial generations, enabling early detection of failing trajectories and compute-aware control. These results show that reliable correctness cues are intrinsic to generation process and can be extracted efficiently without external supervision.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7117277568",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "attention_internal_signals"
+      }
+    },
+    {
+      "id": "paper_058",
+      "title": "Is There No Such Thing as a Bad Question? H4R: HalluciBot for Ratiocination, Rewriting, Ranking, and Routing",
+      "authors": [
+        "William Watson",
+        "Nicole Cho",
+        "Nishan Srishankar"
+      ],
+      "year": 2025,
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v39i24.34736",
+      "url": "https://openalex.org/W4409362525",
+      "abstract": "Hallucination continues to be one of the most critical challenges in the institutional adoption journey of Large Language Models (LLMs). While prior studies have primarily focused on the post-generation analysis and refinement of outputs, this paper centers on the effectiveness of queries in eliciting accurate responses from LLMs. We present HalluciBot, a model that estimates the query's propensity to hallucinate before generation, without invoking any LLMs during inference. HalluciBot can serve as a proxy reward model for query rewriting, offering a general framework to estimate query quality based on accuracy and consensus. In essence, HalluciBot investigates how poorly constructed queries can lead to erroneous outputs - moreover, by employing query rewriting guided by HalluciBot's empirical estimates, we demonstrate that 95.7% output accuracy can be achieved for Multiple Choice questions. The training procedure for HalluciBot consists of perturbing 369,837 queries n times, employing n+1 independent LLM agents, sampling an output from each query, conducting a Multi-Agent Monte Carlo simulation on the sampled outputs, and training an encoder classifier. The idea of perturbation is the outcome of our ablation studies that measures the increase in output diversity (+12.5 agreement spread) by perturbing a query in lexically different but semantically similar ways. Therefore, HalluciBot paves the way to ratiocinate (76.0% test F1 score, 46.6% in saved computation on hallucinatory queries), rewrite (+30.2% positive class transition from hallucinatory to non-hallucinatory), rank (+50.6% positive class transition from hallucinatory to non-hallucinatory), and route queries to effective pipelines.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4409362525",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "verbalized_self_confidence"
+      }
+    },
+    {
+      "id": "paper_059",
+      "title": "Mechanistic Control of Language Models",
+      "authors": [
+        "Li, Kenneth"
+      ],
+      "year": 2025,
+      "journal": "Digital Access to Scholarship at Harvard (DASH) (Harvard University)",
+      "doi": null,
+      "url": "https://openalex.org/W7112259593",
+      "abstract": "This dissertation talks about mechanistic control of large language models (LLM). The intuition is that, in order to rigorously control large language models, it is beneficial to first understand their inner working mechanisms. Even though a fully mechanistic understanding of language models is far from complete at the time this dissertation is written, I will demonstrate several cases where such understanding provides a useful surface for control. I argue that connecting interpretability to real-life applications--e.g., alignment and safety--offers advantages to the development of both fields. I first position this methodological approach within a broader scientific context, discussing and systematizing the role of interpretability in artificial intelligence research. I then present four intensive case studies, each leveraging certain interpretability insights to control the behavior of language models. The interpretability insights I explored span emergent world representations, representation of internal knowledge, phenomenon of attention decay, and representation of users. The demonstrated effects of control include targeted editing of the world model, reduced hallucination, improved stability of system prompts in long conversations, and better planning in multi-turn dialogue.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7112259593",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "attention_internal_signals"
+      }
+    },
+    {
+      "id": "paper_060",
+      "title": "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+      "authors": [
+        "G. Liu",
+        "Gal Yona",
+        "Avi Caciularu",
+        "Idan Szpektor",
+        "Tim G. J. Rudner",
+        "Arman Cohan"
+      ],
+      "year": 2025,
+      "journal": null,
+      "doi": "10.18653/v1/2025.emnlp-main.1505",
+      "url": "https://openalex.org/W4416035528",
+      "abstract": "A critical component in the trustworthiness of LLMs is reliable uncertainty communication, yet LLMs often use assertive language when conveying false claims, leading to over-reliance and eroded trust.We present the first systematic study of faithful confidence calibration of LLMs, benchmarking models' ability to use linguistic expressions of uncertainty that faithfully reflect their intrinsic uncertainty, across a comprehensive array of models, datasets, and prompting strategies.Our results demonstrate that LLMs largely fail at this task, and that existing interventions are insufficient: standard prompt approaches provide only marginal gains, and existing, factuality-based calibration techniques can even harm faithful calibration.To address this critical gap, we introduce MetaFaith, a novel prompt-based calibration approach inspired by human metacognition.We show that MetaFaith robustly improves faithful calibration across diverse models and task domains, enabling up to 61% improvement in faithfulness and achieving an 83% win rate over original generations as judged by humans.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W4416035528",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_061",
+      "title": "Remaining Useful Life Prediction and Uncertainty Quantification with Multi-Branch Deep Networks and Probabilistic Calibration",
+      "authors": [
+        "Xin Zhou",
+        "Fanping Wei",
+        "Xiaobing Ma"
+      ],
+      "year": 2025,
+      "journal": "2025 IEEE International Conference on Sensing, Diagnostics, Prognostics, and Control",
+      "doi": "10.1109/sdpc68151.2025.11347806",
+      "url": "https://www.semanticscholar.org/paper/0a432ec6fbfe979ea25a98d5a0de8f882ecb66fd",
+      "abstract": "Accurate remaining useful life (RUL) prediction is a key enabler of safe equipment operation and effective predictive maintenance. In practice, operating variability often induces distribution mismatch between training and deployment data, undermining the accuracy and transferability of existing models. We propose a multi-branch framework that hierarchically fuses CNN, BiLSTM, and Transformer components to learn robust degradation representations across diverse conditions. The model is further augmented with an uncertainty module that combines snapshot ensemble and Monte Carlo dropout to estimate epistemic and aleatoric uncertainties, and employs conformal prediction to construct prediction intervals with statistical coverage guarantees. Experiments on the C-MAPSS turbofan and A123 lithium-ion battery datasets show improved performance on challenging multi-condition subsets, achieving lower RMSE and Score than strong baselines while maintaining high interval coverage.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "0a432ec6fbfe979ea25a98d5a0de8f882ecb66fd",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "epistemic_aleatoric"
+      }
+    },
+    {
+      "id": "paper_062",
+      "title": "Variational Visual Question Answering for Uncertainty-Aware Selective Prediction",
+      "authors": [
+        "T. J. Wieczorek",
+        "Nathalie Daun",
+        "Mohammad Emtiyaz Khan",
+        "Marcus Rohrbach"
+      ],
+      "year": 2025,
+      "journal": null,
+      "doi": null,
+      "url": "https://www.semanticscholar.org/paper/d834575c5696a615928560cc227b268910194bbd",
+      "abstract": "Despite remarkable progress in recent years, Vision Language Models (VLMs) remain prone to overconfidence and hallucinations on tasks such as Visual Question Answering (VQA) and Visual Reasoning. Bayesian methods can potentially improve reliability by helping models predict selectively, that is, models respond only when they are sufficiently confident. Unfortunately, such approaches can be costly and ineffective for large models, and there exists little evidence to show otherwise for multimodal applications. Here, we show for the first time the effectiveness and competitive edge of variational Bayes for selective prediction in VQA. We build on recent advances in variational methods for deep learning and propose an extension called\"Variational VQA\". This method improves calibration and yields significant gains for selective prediction on VQA and Visual Reasoning, particularly when the error tolerance is low ($\\leq 1\\%$). Often, just one posterior sample yields more reliable answers than those given by models trained with AdamW. In addition, we propose a new risk-averse selector that outperforms standard sample averaging by considering the variance of predictions. Overall, we present compelling evidence that variational learning is a viable option to make large VLMs safer and more trustworthy.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "semantic_scholar"
+      ],
+      "semantic_scholar_id": "d834575c5696a615928560cc227b268910194bbd",
+      "openalex_id": null,
+      "pubmed_id": null,
+      "arxiv_id": "2505.09591",
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q1",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_063",
+      "title": "BaseCal: Unsupervised Confidence Calibration via Base Model Signals",
+      "authors": [
+        "Hexiang Tan",
+        "Wanli Yang",
+        "Junwei Zhang",
+        "Xin Chen",
+        "Rui Tang",
+        "Du Su",
+        "Jingang Wang",
+        "Yuanzhuo Wang",
+        "Fei Sun",
+        "Xueqi Cheng"
+      ],
+      "year": 2026,
+      "journal": "arXiv (Cornell University)",
+      "doi": null,
+      "url": "https://openalex.org/W7119234779",
+      "abstract": "Reliable confidence is essential for trusting the outputs of LLMs, yet widely deployed post-trained LLMs (PoLLMs) typically compromise this trust with severe overconfidence. In contrast, we observe that their corresponding base LLMs often remain well-calibrated. This naturally motivates us to calibrate PoLLM confidence using the base LLM as a reference. This work proposes two ways to achieve this. A straightforward solution, BaseCal-ReEval, evaluates PoLLM's responses by feeding them into the base LLM to get average probabilities as confidence. While effective, this approach introduces additional inference overhead. To address this, we propose BaseCal-Proj, which trains a lightweight projection to map the final-layer hidden states of PoLLMs back to those of their base LLMs. These projected states are then processed by the base LLM's output layer to derive base-calibrated confidence for PoLLM's responses. Notably, BaseCal is an unsupervised, plug-and-play solution that operates without human labels or LLM modifications. Experiments across five datasets and three LLM families demonstrate the effectiveness of BaseCal, reducing Expected Calibration Error (ECE) by an average of 42.90\\% compared to the best unsupervised baselines.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7119234779",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    },
+    {
+      "id": "paper_064",
+      "title": "Between the Layers Lies the Truth: Uncertainty Estimation in LLMs Using Intra-Layer Local Information Scores",
+      "authors": [
+        "Zvi Badash",
+        "Yonatan Belinkov",
+        "Moti Freiman"
+      ],
+      "year": 2026,
+      "journal": "ArXiv.org",
+      "doi": null,
+      "url": "https://openalex.org/W7140953889",
+      "abstract": "Large language models (LLMs) are often confidently wrong, making reliable uncertainty estimation (UE) essential. Output-based heuristics are cheap but brittle, while probing internal representations is effective yet high-dimensional and hard to transfer. We propose a compact, per-instance UE method that scores cross-layer agreement patterns in internal representations using a single forward pass. Across three models, our method matches probing in-distribution, with mean diagonal differences of at most $-1.8$ AUPRC percentage points and $+4.9$ Brier score points. Under cross-dataset transfer, it consistently outperforms probing, achieving off-diagonal gains up to $+2.86$ AUPRC and $+21.02$ Brier points. Under 4-bit weight-only quantization, it remains robust, improving over probing by $+1.94$ AUPRC points and $+5.33$ Brier points on average. Beyond performance, examining specific layer--layer interactions reveals differences in how disparate models encode uncertainty. Altogether, our UE method offers a lightweight, compact means to capture transferable uncertainty in LLMs.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7140953889",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "attention_internal_signals"
+      }
+    },
+    {
+      "id": "paper_065",
+      "title": "I-CALM: Incentivizing Confidence-Aware Abstention for LLM Hallucination Mitigation",
+      "authors": [
+        "Haotian Zong",
+        "Binze Li",
+        "Yufei Long",
+        "Sinyin Chang",
+        "Jialong Wu",
+        "Gillian K. Hadfield"
+      ],
+      "year": 2026,
+      "journal": "arXiv (Cornell University)",
+      "doi": null,
+      "url": "https://openalex.org/W7152331421",
+      "abstract": "Large language models (LLMs) frequently produce confident but incorrect answers, partly because common binary scoring conventions reward answering over honestly expressing uncertainty. We study whether prompt-only interventions -- explicitly announcing reward schemes for answer-versus-abstain decisions plus humility-oriented normative principles -- can reduce hallucination risk without modifying the model. Our focus is epistemic abstention on factual questions with a verifiable answer, where current LLMs often fail to abstain despite being uncertain about their answers. We first assess self-reported verbal confidence as a usable uncertainty signal, showing stability under prompt paraphrasing and reasonable calibration against a token-probability baseline. We then study I-CALM, a prompt-based framework that (i) elicits verbal confidence, (ii) partially rewards abstention through explicit reward schemes, and (iii) adds lightweight normative principles emphasizing truthfulness, humility, and responsibility. Using GPT-5 mini on PopQA as the main setting, we find that confidence-eliciting, abstention-rewarding prompts, especially with norms, reduce the false-answer rate on answered cases mainly by identifying and shifting error-prone cases to abstention and re-calibrating their confidence. This trades coverage for reliability while leaving forced-answer performance largely unchanged. Varying the abstention reward yields a clear abstention-hallucination frontier. Overall, results show the framework can improve selective answering on factual questions without retraining, with the magnitude of effect varying across models and datasets. Code is available at the following https://github.com/binzeli/hallucinationControl.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7152331421",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "hallucination_detection"
+      }
+    },
+    {
+      "id": "paper_066",
+      "title": "On the Evaluation of Capability Estimation Methods for Large Language Models",
+      "authors": [
+        "Qiang Hu",
+        "Jin Wen",
+        "Yao Zhang",
+        "Maxime Cordy",
+        "Yongqiang Lyu"
+      ],
+      "year": 2026,
+      "journal": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "doi": "10.1609/aaai.v40i37.40368",
+      "url": "https://openalex.org/W7138013593",
+      "abstract": "The emergence of large language models (LLMs) marks a transformative era in artificial intelligence~(AI). However, systematically evaluating the capability of LLMs is challenging due to the necessity of a large number of labeled test data. To tackle this problem, in the conventional AI field, AutoEval has been proposed to estimate the capability of AI models without data labeling effort. Unfortunately, even though multiple AutoEval methods have been proposed, most are constructed for classification tasks and evaluated only on image datasets. As a result, their effectiveness for LLMs is unclear, as LLMs often target generation tasks. In this work, we introduce the first AutoEval benchmark specifically designed to estimate the capability of LLMs using unlabeled test data, AEBench. Besides existing AutoEval methods, AEBench also supports our designed method, which utilizes the correlation between data uncertainty and model ability for the capability estimation. In total, AEBench covers 12 AutoEval methods and 120 method combinations. Based on AEBench, we conducted a comprehensive study to explore the usefulness of AutoEval on LLMs. Experimental results on 10 datasets demonstrated that our designed uncertainty features-based methods perform the best in achieving the lowest estimation errors.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7138013593",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "general_uq"
+      }
+    },
+    {
+      "id": "paper_067",
+      "title": "The Dunning-Kruger Effect in Large Language Models: An Empirical Study of Confidence Calibration",
+      "authors": [
+        "Sudipta Ghosh",
+        "Mrityunjoy Panday"
+      ],
+      "year": 2026,
+      "journal": "arXiv (Cornell University)",
+      "doi": null,
+      "url": "https://openalex.org/W7135156760",
+      "abstract": "Large language models (LLMs) have demonstrated remarkable capabilities across diverse tasks, yet their ability to accurately assess their own confidence remains poorly understood. We present an empirical study investigating whether LLMs exhibit patterns reminiscent of the Dunning-Kruger effect -- a cognitive bias where individuals with limited competence tend to overestimate their abilities. We evaluate four state-of-the-art models (Claude Haiku 4.5, Gemini 2.5 Pro, Gemini 2.5 Flash, and Kimi K2) across four benchmark datasets totaling 24,000 experimental trials. Our results reveal striking calibration differences: Kimi K2 exhibits severe overconfidence with an Expected Calibration Error (ECE) of 0.726 despite only 23.3% accuracy, while Claude Haiku 4.5 achieves the best calibration (ECE = 0.122) with 75.4% accuracy. These findings demonstrate that poorly performing models display markedly higher overconfidence -- a pattern analogous to the Dunning-Kruger effect in human cognition. We discuss implications for safe deployment of LLMs in high-stakes applications.",
+      "citation_count": 0,
+      "sources_found_in": [
+        "openalex"
+      ],
+      "semantic_scholar_id": null,
+      "openalex_id": "W7135156760",
+      "pubmed_id": null,
+      "arxiv_id": null,
+      "references": [],
+      "cited_by": [],
+      "is_seed_paper": false,
+      "is_user_seed": false,
+      "found_via": "Q4",
+      "citation_network": {
+        "in_degree": 0,
+        "out_degree": 0,
+        "is_hub": false,
+        "cluster": "calibration_metrics_theory"
+      }
+    }
+  ]
+}

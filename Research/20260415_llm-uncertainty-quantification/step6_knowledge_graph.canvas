@@ -1,0 +1,896 @@
+{
+  "nodes": [
+    {
+      "id": "overview",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step6_sota_review.md",
+      "x": 485,
+      "y": 0,
+      "width": 450,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "theme-1",
+      "type": "group",
+      "x": 0,
+      "y": 180,
+      "width": 420,
+      "height": 730,
+      "label": "Sampling-Based Semantic Consistency / 取樣式語意一致性 UQ"
+    },
+    {
+      "id": "ManakulEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/ManakulEtAl2023.md",
+      "x": 50,
+      "y": 270,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "KuhnEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/KuhnEtAl2023.md",
+      "x": 50,
+      "y": 370,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "FarquharEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/FarquharEtAl2024.md",
+      "x": 50,
+      "y": 470,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "CecereEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/CecereEtAl2025.md",
+      "x": 50,
+      "y": 570,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "KruseEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/KruseEtAl2025.md",
+      "x": 50,
+      "y": 670,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "TonoliniEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/TonoliniEtAl2024.md",
+      "x": 50,
+      "y": 770,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "theme-2",
+      "type": "group",
+      "x": 500,
+      "y": 180,
+      "width": 420,
+      "height": 1030,
+      "label": "Verbalized Confidence & Self-Probing / 語言化信心與自我探測"
+    },
+    {
+      "id": "KadavathEtAl2022",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/KadavathEtAl2022.md",
+      "x": 550,
+      "y": 270,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "LinEtAl2022",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/LinEtAl2022.md",
+      "x": 550,
+      "y": 370,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "TianEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/TianEtAl2023.md",
+      "x": 550,
+      "y": 470,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "XiongEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/XiongEtAl2023.md",
+      "x": 550,
+      "y": 570,
+      "width": 320,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "SavageEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/SavageEtAl2024.md",
+      "x": 550,
+      "y": 670,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "KumarEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/KumarEtAl2024.md",
+      "x": 550,
+      "y": 770,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "LiuEtAl2025a",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/LiuEtAl2025a.md",
+      "x": 550,
+      "y": 870,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "LiuEtAl2025b",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/LiuEtAl2025b.md",
+      "x": 550,
+      "y": 970,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "VazhentsevEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/VazhentsevEtAl2025.md",
+      "x": 550,
+      "y": 1070,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "theme-3",
+      "type": "group",
+      "x": 1000,
+      "y": 180,
+      "width": 420,
+      "height": 630,
+      "label": "Attention & Internal-State UQ ⭐ / 注意力與內部狀態 UQ ⭐ 使用者優先"
+    },
+    {
+      "id": "DuanEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/DuanEtAl2023.md",
+      "x": 1050,
+      "y": 270,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "BeigiEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/BeigiEtAl2024.md",
+      "x": 1050,
+      "y": 370,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "BadashEtAl2026",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/BadashEtAl2026.md",
+      "x": 1050,
+      "y": 470,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "GhasemabadiNiu2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/GhasemabadiNiu2025.md",
+      "x": 1050,
+      "y": 570,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "ZhouEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/ZhouEtAl2025.md",
+      "x": 1050,
+      "y": 670,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "theme-4",
+      "type": "group",
+      "x": 0,
+      "y": 1330,
+      "width": 420,
+      "height": 1230,
+      "label": "Calibration, Selective Prediction & Conformal / 校準、選擇性預測與保形預測"
+    },
+    {
+      "id": "LiuEtAl2025c",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/LiuEtAl2025c.md",
+      "x": 50,
+      "y": 1420,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "HuangEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/HuangEtAl2024.md",
+      "x": 50,
+      "y": 1520,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "TanEtAl2026",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/TanEtAl2026.md",
+      "x": 50,
+      "y": 1620,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "WangEtAl2025c",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/WangEtAl2025c.md",
+      "x": 50,
+      "y": 1720,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "WangEtAl2025a",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/WangEtAl2025a.md",
+      "x": 50,
+      "y": 1820,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "WenEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/WenEtAl2025.md",
+      "x": 50,
+      "y": 1920,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "ZongEtAl2026",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/ZongEtAl2026.md",
+      "x": 50,
+      "y": 2020,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "WuMonz2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/WuMonz2025.md",
+      "x": 50,
+      "y": 2120,
+      "width": 320,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "DevicEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/DevicEtAl2025.md",
+      "x": 50,
+      "y": 2220,
+      "width": 320,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "GhoshPanday2026",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/GhoshPanday2026.md",
+      "x": 50,
+      "y": 2320,
+      "width": 320,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "atakKuzlu2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/atakKuzlu2024.md",
+      "x": 50,
+      "y": 2420,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "theme-5",
+      "type": "group",
+      "x": 500,
+      "y": 1330,
+      "width": 420,
+      "height": 830,
+      "label": "Hallucination Detection & Factuality / 幻覺偵測與事實性"
+    },
+    {
+      "id": "JiEtAl2022",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/JiEtAl2022.md",
+      "x": 550,
+      "y": 1420,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "ZhangEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/ZhangEtAl2025.md",
+      "x": 550,
+      "y": 1520,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "McKennaEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/McKennaEtAl2023.md",
+      "x": 550,
+      "y": 1620,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "Lee2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/Lee2023.md",
+      "x": 550,
+      "y": 1720,
+      "width": 320,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "IqbalEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/IqbalEtAl2024.md",
+      "x": 550,
+      "y": 1820,
+      "width": 320,
+      "height": 70,
+      "color": "5"
+    },
+    {
+      "id": "XiaoWang2021",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/XiaoWang2021.md",
+      "x": 550,
+      "y": 1920,
+      "width": 320,
+      "height": 70,
+      "color": "2"
+    },
+    {
+      "id": "WatsonEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/WatsonEtAl2025.md",
+      "x": 550,
+      "y": 2020,
+      "width": 320,
+      "height": 70,
+      "color": "5"
+    },
+    {
+      "id": "theme-6",
+      "type": "group",
+      "x": 1000,
+      "y": 1330,
+      "width": 420,
+      "height": 830,
+      "label": "Theoretical Foundations & Surveys / 理論基礎與綜述"
+    },
+    {
+      "id": "HeEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/HeEtAl2023.md",
+      "x": 1050,
+      "y": 1420,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "GengEtAl2023",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/GengEtAl2023.md",
+      "x": 1050,
+      "y": 1520,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "GengEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/GengEtAl2024.md",
+      "x": 1050,
+      "y": 1620,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "XiaEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/XiaEtAl2025.md",
+      "x": 1050,
+      "y": 1720,
+      "width": 320,
+      "height": 70,
+      "color": "3"
+    },
+    {
+      "id": "KirchhofEtAl2025",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/KirchhofEtAl2025.md",
+      "x": 1050,
+      "y": 1820,
+      "width": 320,
+      "height": 70,
+      "color": "6"
+    },
+    {
+      "id": "WangEtAl2025b",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/WangEtAl2025b.md",
+      "x": 1050,
+      "y": 1920,
+      "width": 320,
+      "height": 70,
+      "color": "4"
+    },
+    {
+      "id": "GuoEtAl2024",
+      "type": "file",
+      "file": "Research/20260415_llm-uncertainty-quantification/step5_full_text/GuoEtAl2024.md",
+      "x": 1050,
+      "y": 2020,
+      "width": 320,
+      "height": 70,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-0",
+      "fromNode": "KuhnEtAl2023",
+      "fromSide": "right",
+      "toNode": "FarquharEtAl2024",
+      "toSide": "left",
+      "label": "extends: semantic clustering → length-norm. semantic entropy"
+    },
+    {
+      "id": "edge-1",
+      "fromNode": "ManakulEtAl2023",
+      "fromSide": "right",
+      "toNode": "KuhnEtAl2023",
+      "toSide": "left",
+      "label": "shared: sample-then-aggregate UQ"
+    },
+    {
+      "id": "edge-2",
+      "fromNode": "ManakulEtAl2023",
+      "fromSide": "right",
+      "toNode": "FarquharEtAl2024",
+      "toSide": "left",
+      "label": "shared: zero-resource hallucination detection"
+    },
+    {
+      "id": "edge-3",
+      "fromNode": "CecereEtAl2025",
+      "fromSide": "right",
+      "toNode": "FarquharEtAl2024",
+      "toSide": "left",
+      "label": "improves on: temperature variation > fixed sampling"
+    },
+    {
+      "id": "edge-4",
+      "fromNode": "TonoliniEtAl2024",
+      "fromSide": "right",
+      "toNode": "ManakulEtAl2023",
+      "toSide": "left",
+      "label": "extends: prompt-level Bayesian ensembling"
+    },
+    {
+      "id": "edge-5",
+      "fromNode": "KruseEtAl2025",
+      "fromSide": "right",
+      "toNode": "FarquharEtAl2024",
+      "toSide": "left",
+      "label": "extends: multi-LLM info-theoretic UQ"
+    },
+    {
+      "id": "edge-6",
+      "fromNode": "KadavathEtAl2022",
+      "fromSide": "right",
+      "toNode": "LinEtAl2022",
+      "toSide": "left",
+      "label": "shared: self-evaluation as confidence"
+    },
+    {
+      "id": "edge-7",
+      "fromNode": "LinEtAl2022",
+      "fromSide": "right",
+      "toNode": "TianEtAl2023",
+      "toSide": "left",
+      "label": "extends: verbalized confidence on RLHF models"
+    },
+    {
+      "id": "edge-8",
+      "fromNode": "KadavathEtAl2022",
+      "fromSide": "right",
+      "toNode": "TianEtAl2023",
+      "toSide": "left",
+      "label": "extends: P(True) → just-ask paradigm"
+    },
+    {
+      "id": "edge-9",
+      "fromNode": "TianEtAl2023",
+      "fromSide": "right",
+      "toNode": "XiongEtAl2023",
+      "toSide": "left",
+      "label": "evaluated by: empirical 5-model survey"
+    },
+    {
+      "id": "edge-10",
+      "fromNode": "LinEtAl2022",
+      "fromSide": "right",
+      "toNode": "KumarEtAl2024",
+      "toSide": "left",
+      "label": "contradicts: verbalized confidence ≠ logit confidence"
+    },
+    {
+      "id": "edge-11",
+      "fromNode": "KumarEtAl2024",
+      "fromSide": "right",
+      "toNode": "LiuEtAl2025a",
+      "toSide": "left",
+      "label": "addresses: faithfulness penalty for verbalized UQ"
+    },
+    {
+      "id": "edge-12",
+      "fromNode": "LiuEtAl2025a",
+      "fromSide": "right",
+      "toNode": "LiuEtAl2025b",
+      "toSide": "left",
+      "label": "shared: verbalized faithfulness critique"
+    },
+    {
+      "id": "edge-13",
+      "fromNode": "KadavathEtAl2022",
+      "fromSide": "right",
+      "toNode": "SavageEtAl2024",
+      "toSide": "left",
+      "label": "applied: P(True) for clinical QA"
+    },
+    {
+      "id": "edge-14",
+      "fromNode": "DuanEtAl2023",
+      "fromSide": "right",
+      "toNode": "BeigiEtAl2024",
+      "toSide": "left",
+      "label": "extends: attention reweighting → all internal states"
+    },
+    {
+      "id": "edge-15",
+      "fromNode": "BeigiEtAl2024",
+      "fromSide": "right",
+      "toNode": "BadashEtAl2026",
+      "toSide": "left",
+      "label": "extends: layer-aware → intra-layer variance"
+    },
+    {
+      "id": "edge-16",
+      "fromNode": "BadashEtAl2026",
+      "fromSide": "right",
+      "toNode": "GhasemabadiNiu2025",
+      "toSide": "left",
+      "label": "debates: late-layer vs middle-layer signal"
+    },
+    {
+      "id": "edge-17",
+      "fromNode": "GhasemabadiNiu2025",
+      "fromSide": "right",
+      "toNode": "ZhouEtAl2025",
+      "toSide": "left",
+      "label": "shared: internal probing for confabulation"
+    },
+    {
+      "id": "edge-18",
+      "fromNode": "DuanEtAl2023",
+      "fromSide": "right",
+      "toNode": "ZhouEtAl2025",
+      "toSide": "left",
+      "label": "shared: white-box reliability estimation"
+    },
+    {
+      "id": "edge-19",
+      "fromNode": "WangEtAl2025c",
+      "fromSide": "right",
+      "toNode": "WangEtAl2025a",
+      "toSide": "left",
+      "label": "shared: conformal prediction for LLM"
+    },
+    {
+      "id": "edge-20",
+      "fromNode": "HuangEtAl2024",
+      "fromSide": "right",
+      "toNode": "TanEtAl2026",
+      "toSide": "left",
+      "label": "shared: alternative to ECE-based calibration"
+    },
+    {
+      "id": "edge-21",
+      "fromNode": "DevicEtAl2025",
+      "fromSide": "right",
+      "toNode": "GhoshPanday2026",
+      "toSide": "left",
+      "label": "shared: ECE-is-broken critique"
+    },
+    {
+      "id": "edge-22",
+      "fromNode": "WenEtAl2025",
+      "fromSide": "right",
+      "toNode": "ZongEtAl2026",
+      "toSide": "left",
+      "label": "extends: abstention survey → trained abstention"
+    },
+    {
+      "id": "edge-23",
+      "fromNode": "LiuEtAl2025c",
+      "fromSide": "right",
+      "toNode": "HuangEtAl2024",
+      "toSide": "left",
+      "label": "synthesizes: rank-calibration in unified framework"
+    },
+    {
+      "id": "edge-24",
+      "fromNode": "LiuEtAl2025c",
+      "fromSide": "right",
+      "toNode": "WangEtAl2025c",
+      "toSide": "left",
+      "label": "synthesizes: conformal in unified framework"
+    },
+    {
+      "id": "edge-25",
+      "fromNode": "XiaoWang2021",
+      "fromSide": "right",
+      "toNode": "JiEtAl2022",
+      "toSide": "left",
+      "label": "anchor: predictive uncertainty ↔ hallucination"
+    },
+    {
+      "id": "edge-26",
+      "fromNode": "JiEtAl2022",
+      "fromSide": "right",
+      "toNode": "ZhangEtAl2025",
+      "toSide": "left",
+      "label": "extends: NLG taxonomy → LLM survey"
+    },
+    {
+      "id": "edge-27",
+      "fromNode": "McKennaEtAl2023",
+      "fromSide": "right",
+      "toNode": "ZhangEtAl2025",
+      "toSide": "left",
+      "label": "evidence: source decomposition"
+    },
+    {
+      "id": "edge-28",
+      "fromNode": "Lee2023",
+      "fromSide": "right",
+      "toNode": "ZhangEtAl2025",
+      "toSide": "left",
+      "label": "debate: hallucination vs creativity"
+    },
+    {
+      "id": "edge-29",
+      "fromNode": "IqbalEtAl2024",
+      "fromSide": "right",
+      "toNode": "WatsonEtAl2025",
+      "toSide": "left",
+      "label": "shared: factuality / hallucination evaluation framework"
+    },
+    {
+      "id": "edge-30",
+      "fromNode": "HeEtAl2023",
+      "fromSide": "right",
+      "toNode": "GengEtAl2023",
+      "toSide": "left",
+      "label": "complements: general DL UQ ↔ LLM-specific UQ"
+    },
+    {
+      "id": "edge-31",
+      "fromNode": "GengEtAl2023",
+      "fromSide": "right",
+      "toNode": "GengEtAl2024",
+      "toSide": "left",
+      "label": "extends: 2023 survey → 2024 update"
+    },
+    {
+      "id": "edge-32",
+      "fromNode": "GengEtAl2024",
+      "fromSide": "right",
+      "toNode": "XiaEtAl2025",
+      "toSide": "left",
+      "label": "extends: most recent UQ-on-LLM survey"
+    },
+    {
+      "id": "edge-33",
+      "fromNode": "KirchhofEtAl2025",
+      "fromSide": "right",
+      "toNode": "WangEtAl2025b",
+      "toSide": "left",
+      "label": "evidence: aleatoric/epistemic empirical decomposition"
+    },
+    {
+      "id": "edge-34",
+      "fromNode": "KirchhofEtAl2025",
+      "fromSide": "right",
+      "toNode": "DevicEtAl2025",
+      "toSide": "left",
+      "label": "shared: position critique on LLM UQ metrics"
+    },
+    {
+      "id": "edge-35",
+      "fromNode": "WangEtAl2025b",
+      "fromSide": "right",
+      "toNode": "GuoEtAl2024",
+      "toSide": "left",
+      "label": "shared: benchmarking UQ for prompt optimization"
+    },
+    {
+      "id": "edge-36",
+      "fromNode": "FarquharEtAl2024",
+      "fromSide": "right",
+      "toNode": "JiEtAl2022",
+      "toSide": "left",
+      "label": "bridge: semantic-entropy hallucination detection ← NLG taxonomy"
+    },
+    {
+      "id": "edge-37",
+      "fromNode": "DuanEtAl2023",
+      "fromSide": "right",
+      "toNode": "FarquharEtAl2024",
+      "toSide": "left",
+      "label": "bridge: attention reweighting evaluated against semantic entropy"
+    },
+    {
+      "id": "edge-38",
+      "fromNode": "KadavathEtAl2022",
+      "fromSide": "right",
+      "toNode": "DuanEtAl2023",
+      "toSide": "left",
+      "label": "bridge: self-eval (verbalized) vs internal-state UQ"
+    },
+    {
+      "id": "edge-39",
+      "fromNode": "KumarEtAl2024",
+      "fromSide": "right",
+      "toNode": "BeigiEtAl2024",
+      "toSide": "left",
+      "label": "bridge: verbalized critique → internal-state alternative"
+    },
+    {
+      "id": "edge-40",
+      "fromNode": "VazhentsevEtAl2025",
+      "fromSide": "right",
+      "toNode": "BeigiEtAl2024",
+      "toSide": "left",
+      "label": "bridge: token-density signal aligned with internal-state methods"
+    },
+    {
+      "id": "edge-41",
+      "fromNode": "TianEtAl2023",
+      "fromSide": "right",
+      "toNode": "HuangEtAl2024",
+      "toSide": "left",
+      "label": "bridge: verbalized confidence → rank-calibration"
+    },
+    {
+      "id": "edge-42",
+      "fromNode": "WenEtAl2025",
+      "fromSide": "right",
+      "toNode": "ZhangEtAl2025",
+      "toSide": "left",
+      "label": "bridge: abstention survey ↔ hallucination survey"
+    },
+    {
+      "id": "edge-43",
+      "fromNode": "ZongEtAl2026",
+      "fromSide": "right",
+      "toNode": "ZhangEtAl2025",
+      "toSide": "left",
+      "label": "bridge: trained abstention applied to hallucination"
+    },
+    {
+      "id": "edge-44",
+      "fromNode": "HeEtAl2023",
+      "fromSide": "right",
+      "toNode": "DuanEtAl2023",
+      "toSide": "left",
+      "label": "bridge: classical UQ taxonomy ← attention-based extension"
+    },
+    {
+      "id": "edge-45",
+      "fromNode": "GengEtAl2023",
+      "fromSide": "right",
+      "toNode": "TianEtAl2023",
+      "toSide": "left",
+      "label": "bridge: confidence calibration survey ← Just-Ask anchor"
+    },
+    {
+      "id": "edge-46",
+      "fromNode": "XiaoWang2021",
+      "fromSide": "right",
+      "toNode": "FarquharEtAl2024",
+      "toSide": "left",
+      "label": "bridge: foundational link → semantic entropy validation"
+    }
+  ]
+}
