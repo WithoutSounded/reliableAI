@@ -1,0 +1,70 @@
+{
+  "session_id": "20260415",
+  "topic": "LLM Uncertainty Quantification",
+  "topic_original": "LLM Uncertainty Quantification",
+  "topic_slug": "llm-uncertainty-quantification",
+  "timestamp": "2026-04-15T00:00:00+08:00",
+  "current_step": 1,
+  "pico": {
+    "population": "Large Language Models (autoregressive transformer-based), including both open-weight models (LLaMA, Mistral, Qwen) and API-only/black-box models (GPT-4, Claude, Gemini)",
+    "intervention": "Uncertainty quantification methods for generation: semantic entropy, verbalized confidence (self-verbalized uncertainty), P(True)/self-evaluation, consistency-based sampling (SelfCheckGPT), ensemble/MC-dropout, attention-based signals, length-normalized likelihood, token-to-sequence aggregation",
+    "comparison": "Baseline likelihood/perplexity methods; temperature-scaling calibration; white-box (logit-accessible) vs black-box (API-only) method families; hallucination-detection baselines",
+    "outcome": "Calibration quality (Expected Calibration Error, Brier score); selective prediction performance (AUROC for misclassification detection, risk-coverage curve, selective risk); hallucination detection accuracy; epistemic vs aleatoric decomposition validity",
+    "setting": "Short-form QA (TriviaQA, NaturalQuestions, SQuAD, TruthfulQA); multi-choice (MMLU); reasoning (GSM8K, MATH, chain-of-thought); long-form generation (HaluEval, FActScore); emerging: code generation, multilingual, agentic/tool-use",
+    "timeframe": "2022-2026 (post-Kadavath anchor; emphasis on 2023-2026 SOTA)"
+  },
+  "source_urls": [],
+  "user_interests": {
+    "priority_direction": "Attention-based UQ (using attention patterns as epistemic signal) — user's original angle",
+    "secondary_directions": [
+      "Token-level to sequence-level UQ aggregation",
+      "Reasoning chain (CoT) UQ",
+      "White-box vs black-box method comparison",
+      "UQ for agentic/tool-use LLMs"
+    ]
+  },
+  "seed_papers": [
+    "Kadavath et al. 2022 — Language Models (Mostly) Know What They Know",
+    "Farquhar et al. 2024 (Nature) — Detecting hallucinations via semantic entropy",
+    "Lin et al. 2022 — Teaching Models to Express Uncertainty in Words",
+    "Kuhn et al. 2023 — Semantic Uncertainty: Linguistic Invariances",
+    "Xiong et al. 2024 (ICLR) — Can LLMs Express Their Uncertainty?",
+    "Tian et al. 2023 — Just Ask for Calibration",
+    "Duan et al. 2024 — Shifting Attention to Relevance (SAR)",
+    "Manakul et al. 2023 — SelfCheckGPT",
+    "Geng et al. 2024 — Survey of Confidence Estimation and Calibration in LLMs",
+    "Huang et al. 2024 — Survey on UQ Methods for Deep Learning"
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "strategy": "Core terms + Population",
+      "query": "(\"large language model\" OR LLM) AND (\"uncertainty quantification\" OR \"confidence calibration\" OR \"selective prediction\")",
+      "rationale": "Direct hit on the primary topic — captures papers explicitly framing their work as UQ/calibration/selective prediction for LLMs"
+    },
+    {
+      "id": "Q2",
+      "strategy": "Synonyms + Method-family terminology",
+      "query": "(\"semantic entropy\" OR \"semantic uncertainty\" OR \"verbalized confidence\" OR \"P(True)\" OR \"self-evaluation\" OR \"consistency-based\") AND (LLM OR \"language model\" OR generation)",
+      "rationale": "Catches papers that use specific method names rather than the umbrella term 'UQ' — essential since SOTA papers (Farquhar, Kadavath, Lin) often foreground the method name"
+    },
+    {
+      "id": "Q3",
+      "strategy": "Mechanism + Theoretical basis",
+      "query": "(\"epistemic uncertainty\" OR \"aleatoric uncertainty\") AND (\"language model\" OR autoregressive OR \"next-token\") AND (logits OR likelihood OR perplexity)",
+      "rationale": "Finds the theoretical grounding — epistemic/aleatoric decomposition, likelihood-based signals, token-level probability mechanisms underlying LLM UQ"
+    },
+    {
+      "id": "Q4",
+      "strategy": "Evaluation metrics + Benchmarks",
+      "query": "(\"Expected Calibration Error\" OR ECE OR \"risk-coverage\" OR \"AUROC\") AND LLM AND (TriviaQA OR MMLU OR TruthfulQA OR GSM8K OR HaluEval OR FActScore)",
+      "rationale": "Targets empirical/benchmark papers — finds works with rigorous evaluation on standard UQ benchmarks, useful for baseline comparison and reproducibility"
+    },
+    {
+      "id": "Q5",
+      "strategy": "Cross-disciplinary + Emerging angles",
+      "query": "(\"attention-based\" OR \"attention pattern\" OR \"chain-of-thought\" OR \"tool-use\" OR agentic OR \"long-form generation\") AND (uncertainty OR confidence OR hallucination) AND (LLM OR transformer)",
+      "rationale": "Targets the user's priority direction (attention-based UQ) plus emerging frontiers (CoT-step UQ, agentic UQ, long-form UQ) where literature is sparse but differentiation is high"
+    }
+  ]
+}
